@@ -76,6 +76,7 @@
 .tags{
     font-size: 1.17em;
     font-weight: 700;
+    
     color:var(--function-color);
 }
 .personal-intro{
@@ -215,6 +216,40 @@
 .made-with ul li a:hover{
     color: var(--nb-hover-icon-color);
 }
+.about-personal{
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.about-personal p{
+    margin-bottom: 1rem;
+}
+.about-title{
+    font-size: 5rem;
+    word-spacing: -1rem;
+    white-space: nowrap;
+    color:var(--header-text-color)
+}
+.about-title .name{
+    font-size: 2.5rem;
+    color:var(--function-color);
+}
+.about-grids ul li{
+    list-style: none;
+}
+.about-grids h2{
+    margin-bottom: 1rem;
+    color:var(--header-text-color);
+}
+.about-skills{
+    margin-bottom: 2rem;
+}
+.about-also{
+    margin-bottom: 2rem;
+}
+
+
+
 footer{
     font-size: small;
     text-align: center;
