@@ -8,27 +8,26 @@ const CurriculumVitae = () => {
           <span className="func">&lt;href="cv.pdf" download&gt;</span>
           <span>)</span>
         </h2>
-        <ul>
-          <a
-            href="src/assets/Keenan Brant CV.pdf"
-            title="Download CV"
-            target="_blank"
-            download
+        <a
+          href="src/assets/Keenan Brant CV.pdf"
+          title="Download CV"
+          target="_blank"
+          download
+        >
+          <svg
+            version="1.1"
+            className="cv_svg"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 66 33"
+            width="90"
+            fill="#E92A4B"
           >
-            <svg
-              version="1.1"
-              className="cv_svg"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              viewBox="0 0 66 33"
-              width="90"
-              fill="#E92A4B"
-            >
-              <g>
-                <path
-                  className="st4"
-                  d="M50.02,0H15.98C7.16,0,0,7.16,0,15.98v1.03C0,25.84,7.16,33,15.98,33h34.03C58.84,33,66,25.84,66,17.02v-1.03
+            <g>
+              <path
+                className="st4"
+                d="M50.02,0H15.98C7.16,0,0,7.16,0,15.98v1.03C0,25.84,7.16,33,15.98,33h34.03C58.84,33,66,25.84,66,17.02v-1.03
 		                                C66,7.16,58.84,0,50.02,0z M41.68,18.17c0.25-0.33,0.72-0.4,1.05-0.16l1.52,1.12V8c0-0.41,0.34-0.75,0.75-0.75S45.75,7.59,45.75,8
 		                                v11.13l1.52-1.12c0.33-0.25,0.8-0.17,1.05,0.16c0.25,0.33,0.17,0.8-0.16,1.05l-2.71,2c-0.03,0.02-0.07,0.03-0.1,0.05
 		                                c-0.03,0.01-0.05,0.03-0.08,0.04c-0.09,0.03-0.17,0.05-0.26,0.05s-0.18-0.02-0.26-0.05c-0.03-0.01-0.05-0.03-0.08-0.04
@@ -40,11 +39,10 @@ const CurriculumVitae = () => {
 		                                M30.82,24.12L25.24,9.1h2.21l3.88,11.29l0.34,1.19h0.06l0.34-1.19L35.95,9.1h2.2l-5.58,15.02H30.82z M52.75,25
 		                                c0,0.41-0.34,0.75-0.75,0.75H38c-0.41,0-0.75-0.34-0.75-0.75v-4c0-0.41,0.34-0.75,0.75-0.75s0.75,0.34,0.75,0.75v3.25h12.5V21
 		                                c0-0.41,0.34-0.75,0.75-0.75s0.75,0.34,0.75,0.75V25z"
-                />
-              </g>
-            </svg>
-          </a>
-        </ul>
+              />
+            </g>
+          </svg>
+        </a>
         <span className="tags">&lt;/curriculum vitae&gt;</span>
       </section>
     </>
