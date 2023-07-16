@@ -4,8 +4,8 @@ const IntroHome = () => {
       <section className="personal-intro">
         <span className="tags">&lt;intro&gt;</span>
         <h1 className="intro-title">
-          <span className="keenan">Keenan</span>
-          <span className="func">.io()</span>
+          <span className="keenan">KBrant</span>
+          <span className="func">.dev()</span>
         </h1>
         <p className="name">Keenan Brant</p>
         <p>
