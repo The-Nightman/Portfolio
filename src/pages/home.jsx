@@ -4,13 +4,13 @@ const Home = () => {
   
     return (
       <>
-      <span class="container-tags">&lt;container&gt;</span>
+      <span className="container-tags">&lt;container&gt;</span>
       <IntroHome/>
       <CurriculumVitae/>
       <SkillsHome/>
       <Projects/>
       <MadeWith/>
-      <span class="container-tags">&lt;/container&gt;</span>
+      <span className="container-tags">&lt;/container&gt;</span>
       </>
     )
   }
