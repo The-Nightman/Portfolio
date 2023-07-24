@@ -9,10 +9,10 @@ const Navbar = () => {
         <nav id="header-navbar">
           <ul>
             <li>
-              <a href="index.html">K.io()</a>
+              <a href="/">K.io()</a>
             </li>
             <li>
-              <a href="about.html">.about()</a>
+              <a href="/about">.about()</a>
             </li>
             <li>
               <a href="#">.email()</a>
