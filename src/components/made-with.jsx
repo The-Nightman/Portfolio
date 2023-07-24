@@ -1,15 +1,15 @@
 const MadeWith = () => {
   return (
     <>
-      <section class="made-with">
-        <h2 class="tags">/*This site was built with*/</h2>
-        <div class="made-with-grid">
-          <ul class="col-tools">
-            <h3 class="made-with-col-title">
+      <section className="made-with">
+        <h2 className="tags">/*This site was built with*/</h2>
+        <div className="made-with-grid">
+          <ul className="col-tools">
+            <h3 className="made-with-col-title">
               <span>def</span>
-              <span class="func">(</span>
+              <span className="func">(</span>
               <span>_tools</span>
-              <span class="func">)</span>
+              <span className="func">)</span>
             </h3>
             <li>
               <span>// HTML</span>
@@ -30,12 +30,12 @@ const MadeWith = () => {
               <span>// Adobe Photoshop</span>
             </li>
           </ul>
-          <ul class="col-music">
-            <h3 class="made-with-col-title">
+          <ul className="col-music">
+            <h3 className="made-with-col-title">
               <span>def</span>
-              <span class="func">(</span>
+              <span className="func">(</span>
               <span>_music</span>
-              <span class="func">)</span>
+              <span className="func">)</span>
             </h3>
             <li>
               <a href="https://open.spotify.com/track/7wdwIaXUuzlu1grzWMFRJm?si=5abfe714ff464a5b">
