@@ -9,8 +9,8 @@ const Home = () => {
       <CurriculumVitae/>
       <SkillsHome/>
       <Projects/>
-      <MadeWith/>
       <span className="container-tags">&lt;/container&gt;</span>
+      <MadeWith/>
       </>
     )
   }
