@@ -60,7 +60,7 @@
 }
 /* navbar mobile */
 .nav-responsive-icons {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     height: 2rem;
@@ -121,5 +121,12 @@
 @media only screen and (max-width:1100px) {
     .header-container{
         max-width: 90vw;
+    }
+}
+@media only screen and (max-width:800px) {
+    .nav-breadcrumb{
+        position: absolute;
+        top: 1.4rem;
+        left: 1rem;
     }
 }
