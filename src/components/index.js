@@ -8,6 +8,8 @@ import AboutPersonality from "./about-personality";
 import TriCol from "../components/tri-col";
 import Navbar from "../components/navbar";
 import AboutSkills from "../components/about-skills";
+import NavMobile from "../components/nav-mobile";
+import NavDesktop from "../components/nav-desktop";
 
 export {
   IntroHome,
@@ -20,4 +22,6 @@ export {
   TriCol,
   Navbar,
   AboutSkills,
+  NavMobile,
+  NavDesktop
 };
