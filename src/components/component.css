@@ -13,6 +13,11 @@
 a {
     text-decoration: none;
 }
+/* footer */
+footer {
+    text-align: center;
+    padding-bottom: 2rem;
+}
 /* tricolor */
 #tricolorsvg{
     display: block;
@@ -239,8 +244,33 @@ a {
 .proj-button:hover .project-github {
     fill: var(--nb-hover-color);
 }
-
-
+/* made with */
+.made-with {
+    padding-left: 1rem;
+    padding-bottom: 10rem;
+}
+.made-with .tags {
+    margin-bottom: 2rem;
+}
+.made-with-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 4rem;
+}
+.made-with ul li{
+    color: var(--function-color);
+    list-style: none;
+    white-space: nowrap;
+}
+.made-with ul li a{
+    transition: color .2s ease-out;
+    color: var(--function-color);
+    text-decoration: none;
+}
+.made-with ul li a:hover{
+    color: var(--nb-hover-icon-color);
+}
 
 
 
