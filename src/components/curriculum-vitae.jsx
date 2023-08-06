@@ -1,4 +1,4 @@
-import { ReactComponent as CvButton } from "../assets/cvbutton.svg"
+import { ReactComponent as CvButton } from "../assets/cvbutton.svg";
 
 const CurriculumVitae = () => {
   return (
@@ -16,7 +16,7 @@ const CurriculumVitae = () => {
           target="_blank"
           download
         >
-          <CvButton/>
+          <CvButton />
         </a>
         <span className="tags">&lt;/curriculum vitae&gt;</span>
       </section>

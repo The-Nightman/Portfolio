@@ -1,5 +1,5 @@
-import { ReactComponent as GithubSVG } from "../assets/github.svg"
-import { ReactComponent as LinkedinSVG } from "../assets/linkedin.svg"
+import { ReactComponent as GithubSVG } from "../assets/github.svg";
+import { ReactComponent as LinkedinSVG } from "../assets/linkedin.svg";
 
 const Navbar = () => {
   return (
@@ -22,12 +22,15 @@ const Navbar = () => {
             </li>
             <li className="github" title="GitHub">
               <a href="https://github.com/The-Nightman" target="_blank">
-                <GithubSVG/>
+                <GithubSVG />
               </a>
             </li>
             <li className="linkedin" title="LinkedIn">
-              <a href="https://www.linkedin.com/in/keenan-brant/" target="_blank">
-                <LinkedinSVG/>
+              <a
+                href="https://www.linkedin.com/in/keenan-brant/"
+                target="_blank"
+              >
+                <LinkedinSVG />
               </a>
             </li>
           </ul>
