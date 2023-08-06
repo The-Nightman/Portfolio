@@ -10,6 +10,8 @@ import Navbar from "../components/navbar";
 import AboutSkills from "../components/about-skills";
 import NavMobile from "../components/nav-mobile";
 import NavDesktop from "../components/nav-desktop";
+import ProjectCard from "../components/project-card";
+
 
 export {
   IntroHome,
@@ -23,5 +25,6 @@ export {
   Navbar,
   AboutSkills,
   NavMobile,
-  NavDesktop
+  NavDesktop,
+  ProjectCard
 };
