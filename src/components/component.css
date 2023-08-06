@@ -4,3 +4,12 @@
     --function-color: #E92A4B;
     --header-text-color: #e0e0e0;
 }
+/* tricolor */
+#tricolorsvg{
+    display: block;
+}
+.bitricolor{
+    background: linear-gradient(180deg, #550834 0%, rgb(14, 17, 22) 9vh 10%);
+    min-height: 9vh;
+    position: relative;
+}

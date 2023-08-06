@@ -16,11 +16,3 @@ body{
     font-family: 'Roboto Mono', monospace;
     color: #c5c5c5d7;
 }
-#tricolorsvg{
-    display: block;
-}
-.bitricolor{
-    background: linear-gradient(180deg, #550834 0%, rgb(14, 17, 22) 9vh 10%);
-    min-height: 9vh;
-    position: relative;
-}
