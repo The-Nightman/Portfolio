@@ -52,6 +52,7 @@ a {
     color:var(--header-text-color);
 }
 .header-navbar-desktop ul li a svg{
+    color: var(--function-color);
     transition: fill .3s cubic-bezier(.83,.4,.17,.62);
 }
 .header-navbar-desktop ul li a:hover{
@@ -111,6 +112,7 @@ a {
     color:var(--header-text-color);
 }
 .header-navbar-mobile ul li a svg{
+    fill: var(--function-color);
     transition: fill .3s cubic-bezier(.83,.4,.17,.62);
 }
 .header-navbar-mobile ul li a:hover{
@@ -135,7 +137,7 @@ a {
 }
 /* home intro */
 .personal-intro {
-    height: 60vh;
+    min-height: 60vh;
     padding-left: 1rem;
 }
 .intro-title {
@@ -148,7 +150,7 @@ a {
 }
 /* curriculum vitae */
 .cv {
-    height: 70vh;
+    min-height: 70vh;
     padding-left: 1rem;
 }
 .cv-header {
@@ -166,8 +168,12 @@ a {
 }
 /* skills home */
 .skills {
-    height: 70vh;
+    min-height: 70vh;
     padding-left: 1rem;
+}
+.skills-title {
+    font-size: 1.6rem;
+    color:var(--header-text-color);
 }
 .skills ul {
     display: inline-flex;
@@ -181,6 +187,62 @@ a {
     width: 60px;
     height: 60px;
 }
+/* projects */
+.projects {
+    min-height: 70vh;
+    padding-left: 1rem;
+}
+.projects-title {
+    font-size: 2rem;
+    color:var(--header-text-color);
+    padding-bottom: 1rem;
+}
+.projects-cards {
+    display: inline-flex;
+    gap: 3rem;
+    place-content: center;
+}
+.proj-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    background-color: #222935;
+    border-radius: 10px;
+}
+.description {
+    margin: 1rem;
+    word-wrap: break-word;
+}
+.proj-card img {
+    margin: 10px;
+}
+.proj-button {
+    transition: color .2s ease-out;
+    transition: background-color .2s ease-out;
+    background-color:var(--function-color);
+    border-radius: 5px;
+    color: white;
+    padding: 10px 10px;
+    margin: 20px;
+}
+.project-github {
+    fill: var(--nb-hover-icon-color);
+    margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+}
+.proj-button:hover {
+    background-color:var(--nb-hover-icon-color);
+    color:var(--nb-hover-color);
+}
+.proj-button:hover .project-github {
+    fill: var(--nb-hover-color);
+}
+
+
+
+
 
 @media only screen and (max-width:1100px) {
     .header-container{
