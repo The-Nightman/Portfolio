@@ -14,7 +14,7 @@ const ProjectCard = ({ image, name, body, repo, live }) => {
         type="button"
         href={repo}
         target="_blank"
-        className="proj-1-button"
+        className="proj-button"
       >
         <GithubSVG className="project-github" />
         <span>Repository</span>
