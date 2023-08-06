@@ -6,17 +6,16 @@ const CurriculumVitae = () => {
       <section className="cv">
         <span className="tags">&lt;curriculum vitae&gt;</span>
         <h2 className="cv-header">
-          <span>my CV(</span>
-          <span className="func">&lt;href="cv.pdf" download&gt;</span>
+          <span>myCV(</span>
+          <span className="func"><br/>&lt;href="cv.pdf"&gt;<br/></span>
           <span>)</span>
         </h2>
         <a
           href="src/assets/Keenan Brant CV.pdf"
           title="Download CV"
           target="_blank"
-          download
         >
-          <CvButton />
+          <CvButton className="cv-button" />
         </a>
         <span className="tags">&lt;/curriculum vitae&gt;</span>
       </section>
