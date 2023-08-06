@@ -3,12 +3,12 @@ const Projects = () => {
     <>
       <section className="projects">
         <span className="tags">&lt;projects&gt;</span>
-        <h1 className="projects-title">
+        <h2 className="projects-title">
           <span>projects</span>
           <span className="func">&#123;</span>
           <span>display</span>
           <span className="func">&#125;</span>
-        </h1>
+        </h2>
         <div className="projects-cards">
           <ul>
             <li>
