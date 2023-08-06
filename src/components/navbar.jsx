@@ -1,40 +1,42 @@
-import { ReactComponent as GithubSVG } from "../assets/github.svg";
-import { ReactComponent as LinkedinSVG } from "../assets/linkedin.svg";
+import { ReactComponent as MenuOpenSVG } from "../assets/menu.svg";
+import { ReactComponent as MenuCloseSVG } from "../assets/close.svg";
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { NavDesktop, NavMobile } from "./";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const isMobile = useMediaQuery({
+    query: "(max-width: 800px)",
+  });
+
   return (
     <header>
-      <div id="header-container">
-        <div id="nav-breadcrumb">
-          <span className="name">Keenan</span>
-          <span className="func">.io()</span>
+      <div className="header-container">
+        <div className="nav-breadcrumb">
+          <span className="name">KBrant</span>
+          <span className="func">.dev()</span>
         </div>
-        <nav id="header-navbar">
-          <ul>
-            <li>
-              <a href="/">K.io()</a>
-            </li>
-            <li>
-              <a href="/about">.about()</a>
-            </li>
-            <li>
-              <a href="#">.email()</a>
-            </li>
-            <li className="github" title="GitHub">
-              <a href="https://github.com/The-Nightman" target="_blank">
-                <GithubSVG />
-              </a>
-            </li>
-            <li className="linkedin" title="LinkedIn">
-              <a
-                href="https://www.linkedin.com/in/keenan-brant/"
-                target="_blank"
-              >
-                <LinkedinSVG />
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {isMobile ? (
+          <>
+            {!menuOpen ? (
+              <MenuOpenSVG
+                className="nav-responsive-icons"
+                onClick={() => setMenuOpen(true)}
+              />
+            ) : (
+              <>
+                <NavMobile />
+                <MenuCloseSVG
+                  className="nav-responsive-icons"
+                  onClick={() => setMenuOpen(false)}
+                />
+              </>
+            )}
+          </>
+        ) : (
+          <NavDesktop />
+        )}
       </div>
     </header>
   );
