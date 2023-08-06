@@ -12,7 +12,8 @@ const CurriculumVitae = () => {
         </h2>
         <a
           href="src/assets/Keenan Brant CV.pdf"
-          title="Download CV"
+          title="Open CV"
+          aria-label="Open Cv"
           target="_blank"
         >
           <CvButton className="cv-button" />
