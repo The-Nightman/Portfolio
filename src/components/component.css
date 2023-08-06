@@ -164,11 +164,19 @@ a {
 .cv-button:hover {
     fill:var(--nb-hover-icon-color)
 }
-
-
-
-
 /* skills home */
+.skills {
+    height: 70vh;
+    padding-left: 1rem;
+}
+.skills ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.skills ul li {
+    list-style: none;
+}
 .skills-svg {
     width: 60px;
     height: 60px;
