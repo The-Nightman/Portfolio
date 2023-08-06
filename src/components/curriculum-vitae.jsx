@@ -1,4 +1,5 @@
 import { ReactComponent as CvButton } from "../assets/cvbutton.svg";
+import cvPDF from "../assets/Keenan Brant CV.pdf"
 
 const CurriculumVitae = () => {
   return (
@@ -11,7 +12,7 @@ const CurriculumVitae = () => {
           <span>)</span>
         </h2>
         <a
-          href="src/assets/Keenan Brant CV.pdf"
+          href={cvPDF}
           title="Open CV"
           aria-label="Open Cv"
           target="_blank"
