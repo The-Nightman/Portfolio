@@ -1,6 +1,9 @@
-export default NavDesktop = () => {
+import { ReactComponent as GithubSVG } from "../assets/github.svg";
+import { ReactComponent as LinkedinSVG } from "../assets/linkedin.svg";
+
+const NavDesktop = () => {
   return (
-    <nav className="header-navbar">
+    <nav className="header-navbar-desktop">
       <ul>
         <li>
           <a href="/">K.dev()</a>
@@ -11,12 +14,12 @@ export default NavDesktop = () => {
         <li>
           <a href="#">.email()</a>
         </li>
-        <li className="github" title="GitHub">
+        <li className="github-desktop" title="GitHub">
           <a href="https://github.com/The-Nightman" target="_blank">
             <GithubSVG />
           </a>
         </li>
-        <li className="linkedin" title="LinkedIn">
+        <li className="linkedin-desktop" title="LinkedIn">
           <a href="https://www.linkedin.com/in/keenan-brant/" target="_blank">
             <LinkedinSVG />
           </a>
@@ -25,3 +28,5 @@ export default NavDesktop = () => {
     </nav>
   );
 };
+
+export default NavDesktop;
