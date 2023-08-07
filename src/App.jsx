@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { TriCol, Navbar} from './components'
 import { Home, About } from './pages'
-import { HashRouter, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import "./components/component.css"
 
 function App() {
@@ -10,10 +10,10 @@ function App() {
     <div>
       <TriCol/>
       <Navbar/>
-      <HashRouter basename='/'>
+      <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-      </HashRouter>
+      </Routes>
       <footer>
         <p>Rev1.5 Built in 2023<br/>© 2023 Keenan Brant</p>
       </footer>
