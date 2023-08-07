@@ -10,10 +10,10 @@ function App() {
     <div>
       <TriCol/>
       <Navbar/>
-      <Routes>
+      <HashRouter>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-      </Routes>
+      </HashRouter>
       <footer>
         <p>Rev1.5 Built in 2023<br/>© 2023 Keenan Brant</p>
       </footer>
