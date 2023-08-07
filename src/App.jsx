@@ -10,7 +10,7 @@ function App() {
     <div>
       <TriCol/>
       <Navbar/>
-      <HashRouter>
+      <HashRouter basename=''>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </HashRouter>
