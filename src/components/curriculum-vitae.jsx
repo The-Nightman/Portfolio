@@ -1,4 +1,4 @@
-import { ReactComponent as CvButton } from "../assets/cvbutton.svg";
+import { CvButton } from "../assets";
 import cvPDF from "../assets/Keenan Brant CV.pdf"
 
 const CurriculumVitae = () => {
@@ -8,9 +8,10 @@ const CurriculumVitae = () => {
         <span className="tags">&lt;curriculum vitae&gt;</span>
         <h2 className="cv-header">
           <span>myCV(</span>
-          <span className="func"><br/>&lt;href="cv.pdf"&gt;<br/></span>
+          <span className="func">&#40;&#41; =&gt; cv.pdf</span>
           <span>)</span>
         </h2>
+        <div className="cv-button-container">
         <a
           href={cvPDF}
           title="Open CV"
@@ -19,6 +20,7 @@ const CurriculumVitae = () => {
         >
           <CvButton className="cv-button" />
         </a>
+        </div>
         <span className="tags">&lt;/curriculum vitae&gt;</span>
       </section>
     </>
