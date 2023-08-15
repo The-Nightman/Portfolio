@@ -7,17 +7,17 @@ const NavMobile = () => {
       <ul>
         <div className="navbar-mobile">
           <li>
-            <Link to="/">K.dev()</Link>
+            <Link to="/" draggable="false">K.dev()</Link>
           </li>
           <li>
-            <Link to="/about">.about()</Link>
+            <Link to="/about" draggable="false">.about()</Link>
           </li>
           <li>
-            <Link to="#">.email()</Link>
+            <Link to="#" draggable="false">.email()</Link>
           </li>
           <div className="navbar-icons-mobile">
             <li className="github-mobile" title="GitHub">
-              <Link to="https://github.com/The-Nightman" target="_blank">
+              <Link to="https://github.com/The-Nightman" target="_blank" draggable="false">
                 <GithubSVG />
               </Link>
             </li>
@@ -25,6 +25,7 @@ const NavMobile = () => {
               <Link
                 to="https://www.linkedin.com/in/keenan-brant/"
                 target="_blank"
+                draggable="false"
               >
                 <LinkedinSVG />
               </Link>
