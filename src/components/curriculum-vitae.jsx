@@ -17,6 +17,7 @@ const CurriculumVitae = () => {
           title="Open CV"
           aria-label="Open Cv"
           target="_blank"
+          draggable="false"
         >
           <CvButton className="cv-button" />
         </a>
