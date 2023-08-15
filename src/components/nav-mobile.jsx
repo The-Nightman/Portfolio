@@ -1,5 +1,5 @@
-import { ReactComponent as GithubSVG } from "../assets/github.svg";
-import { ReactComponent as LinkedinSVG } from "../assets/linkedin.svg";
+import { Link } from "react-router-dom";
+import { GithubSVG, LinkedinSVG } from "../assets";
 
 const NavMobile = () => {
   return (
@@ -7,27 +7,27 @@ const NavMobile = () => {
       <ul>
         <div className="navbar-mobile">
           <li>
-            <a href="/">K.dev()</a>
+            <Link to="/">K.dev()</Link>
           </li>
           <li>
-            <a href="/about">.about()</a>
+            <Link to="/about">.about()</Link>
           </li>
           <li>
-            <a href="#">.email()</a>
+            <Link to="#">.email()</Link>
           </li>
           <div className="navbar-icons-mobile">
             <li className="github-mobile" title="GitHub">
-              <a href="https://github.com/The-Nightman" target="_blank">
+              <Link to="https://github.com/The-Nightman" target="_blank">
                 <GithubSVG />
-              </a>
+              </Link>
             </li>
             <li className="linkedin-mobile" title="LinkedIn">
-              <a
-                href="https://www.linkedin.com/in/keenan-brant/"
+              <Link
+                to="https://www.linkedin.com/in/keenan-brant/"
                 target="_blank"
               >
                 <LinkedinSVG />
-              </a>
+              </Link>
             </li>
           </div>
         </div>

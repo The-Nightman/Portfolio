@@ -1,28 +1,28 @@
-import { ReactComponent as GithubSVG } from "../assets/github.svg";
-import { ReactComponent as LinkedinSVG } from "../assets/linkedin.svg";
+import { Link } from "react-router-dom";
+import { GithubSVG, LinkedinSVG } from "../assets";
 
 const NavDesktop = () => {
   return (
     <nav className="header-navbar-desktop">
       <ul>
         <li>
-          <a href="/">K.dev()</a>
+          <Link to="/">K.dev()</Link>
         </li>
         <li>
-          <a href="/about">.about()</a>
+          <Link to="/about">.about()</Link>
         </li>
         <li>
-          <a href="#">.email()</a>
+          <Link to="#">.email()</Link>
         </li>
         <li className="github-desktop" title="GitHub">
-          <a href="https://github.com/The-Nightman" target="_blank">
+          <Link to="https://github.com/The-Nightman" target="_blank">
             <GithubSVG />
-          </a>
+          </Link>
         </li>
         <li className="linkedin-desktop" title="LinkedIn">
-          <a href="https://www.linkedin.com/in/keenan-brant/" target="_blank">
+          <Link to="https://www.linkedin.com/in/keenan-brant/" target="_blank">
             <LinkedinSVG />
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
