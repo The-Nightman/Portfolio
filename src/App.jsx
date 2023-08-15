@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { TriCol, Navbar} from './components'
 import { Home, About } from './pages'
 import { Routes, Route } from 'react-router-dom';
