@@ -13,6 +13,9 @@ const AboutPersonality = () => {
           <li>
             <span>// Games</span>
           </li>
+          <li>
+            <span>// Bi/Pan Visibility</span>
+          </li>
         </ul>
       </div>
     </>
