@@ -1,10 +1,12 @@
-import { ReactComponent as HtmlSVG } from "../assets/html.svg";
-import { ReactComponent as CssSVG } from "../assets/css.svg";
-import { ReactComponent as JavaScriptSVG } from "../assets/javascript.svg";
-import { ReactComponent as ReactSVG } from "../assets/react.svg";
-import { ReactComponent as NodeSVG } from "../assets/node.svg";
-import { ReactComponent as ExpressSVG } from "../assets/express.svg";
-import { ReactComponent as PsqlSVG } from "../assets/psql.svg";
+import {
+  HtmlSVG,
+  CssSVG,
+  JavaScriptSVG,
+  ReactSVG,
+  NodeSVG,
+  ExpressSVG,
+  PsqlSVG,
+} from "../assets";
 
 const SkillsHome = () => {
   return (
