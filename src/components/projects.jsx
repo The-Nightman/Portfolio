@@ -1,5 +1,5 @@
 import { ProjectCard } from "./";
-import projData from "../data/projects.json";
+import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
@@ -13,18 +13,18 @@ const Projects = () => {
           <span className="func">&#125;</span>
         </h2>
         <div className="projects-cards">
-          {projData.projects.map(({ image, name, body, repo, live }) => {
-            return (
-              <ProjectCard
-                key={name}
-                image={image}
-                name={name}
-                body={body}
-                repo={repo}
-                live={live}
-              />
-            );
-          })}
+            {projects.map(({ image, name, body, repo, live }) => {
+              return (
+                <ProjectCard
+                  key={name}
+                  image={image}
+                  name={name}
+                  body={body}
+                  repo={repo}
+                  live={live}
+                />
+              );
+            })}
         </div>
         <span className="tags">&lt;/projects&gt;</span>
       </section>
