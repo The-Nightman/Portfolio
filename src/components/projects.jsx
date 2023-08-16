@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
 const Projects = () => {
-  const [width, setWidth] = useState(0)
-  const carousel = useRef()
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
 
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
-  }, [])
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
 
   return (
     <>
@@ -21,13 +21,20 @@ const Projects = () => {
           <span>slider</span>
           <span className="func">&#125;</span>
         </h2>
-        <motion.div ref={carousel} className="projects-carousel-container" whileTap={{cursor: "grabbing"}}>
-          <motion.div drag="x" dragConstraints={{right:0, left: -width}} className="projects-cards">
-            {projects.map(({ image, name, body, repo, live }) => {
+        <motion.div
+          ref={carousel}
+          className="projects-carousel-container"
+          whileTap={{ cursor: "grabbing" }}
+        >
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            className="projects-cards"
+          >
+            {projects.map(({ image, name, body, repo, live }, index) => {
               return (
-                <motion.div className="carousel-item">
+                <motion.div className="carousel-item" key={index}>
                   <ProjectCard
-                    key={name}
                     image={image}
                     name={name}
                     body={body}
