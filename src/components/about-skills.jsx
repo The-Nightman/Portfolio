@@ -2,49 +2,19 @@ const AboutSkills = () => {
   return (
     <>
       <section className="about-skills">
+        <h2 className="about-skills-title">Skills</h2>
         <ul className="skills-grid">
-          <h2 className="about-skills-title">Skills</h2>
           <li>
-            <p>// HTML</p>
+            <p>
+              /* HTML, CSS, JavaScript, Node, Express, React, React Native,
+              Python, SVG */
+            </p>
           </li>
           <li>
-            <p>// CSS</p>
+            <p>/* TDD (Jest), MVC, UX/UI */</p>
           </li>
           <li>
-            <p>// JavaScript</p>
-          </li>
-          <li>
-            <p>// NodeJS</p>
-          </li>
-          <li>
-            <p>// Express</p>
-          </li>
-          <li>
-            <p>// React</p>
-          </li>
-          <li>
-            <p>// React Native</p>
-          </li>
-          <li>
-            <p>// TDD (Jest)</p>
-          </li>
-          <li>
-            <p>// Python</p>
-          </li>
-          <li>
-            <p>// Adobe Illustrator</p>
-          </li>
-          <li>
-            <p>// Adobe Photoshop</p>
-          </li>
-          <li>
-            <p>// Adobe Xd</p>
-          </li>
-          <li>
-            <p>// Figma</p>
-          </li>
-          <li>
-            <p>// SVG</p>
+            <p>/* Adobe Illustrator, Adobe Photoshop, Adobe Xd, Figma */</p>
           </li>
         </ul>
       </section>
