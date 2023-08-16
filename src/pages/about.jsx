@@ -1,20 +1,26 @@
-import { IntroAbout, AboutSkills, AboutPersonality, MadeWith } from "../components"
+import {
+  IntroAbout,
+  AboutSkills,
+  AboutPersonality,
+  MadeWith,
+} from "../components";
 
 const About = () => {
-  
-    return (
-      <>
+  return (
+    <>
+      <div className="separator" />
       <span className="container-tags">&lt;container&gt;</span>
-      <span className="tags">&lt;About&gt;</span>
-      <IntroAbout/>
-      <AboutSkills/>
-      <AboutPersonality/>
-      <span className="tags">&lt;/About&gt;</span>
+      <br />
+      <span className="about-tags">&lt;About&gt;</span>
+      <IntroAbout />
+      <AboutSkills />
+      <AboutPersonality />
+      <span className="about-tags">&lt;/About&gt;</span>
+      <br />
       <span className="container-tags">&lt;/container&gt;</span>
-      <MadeWith/>
-      </>
-    )
-  }
-  
-export default About
-  
+      <MadeWith />
+    </>
+  );
+};
+
+export default About;

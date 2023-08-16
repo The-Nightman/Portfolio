@@ -1,19 +1,24 @@
-import { IntroHome, CurriculumVitae, SkillsHome, Projects, MadeWith } from "../components"
+import {
+  IntroHome,
+  CurriculumVitae,
+  SkillsHome,
+  Projects,
+  MadeWith,
+} from "../components";
 
 const Home = () => {
-  
-    return (
-      <>
+  return (
+    <>
+      <div className="separator" />
       <span className="container-tags">&lt;container&gt;</span>
-      <IntroHome/>
-      <CurriculumVitae/>
-      <SkillsHome/>
-      <Projects/>
+      <IntroHome />
+      <CurriculumVitae />
+      <SkillsHome />
+      <Projects />
       <span className="container-tags">&lt;/container&gt;</span>
-      <MadeWith/>
-      </>
-    )
-  }
-  
-export default Home
-  
+      <MadeWith />
+    </>
+  );
+};
+
+export default Home;
