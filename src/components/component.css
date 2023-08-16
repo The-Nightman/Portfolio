@@ -4,14 +4,20 @@
     --function-color: #E92A4B;
     --header-text-color: #e0e0e0;
 }
-.func{
-    color:var(--function-color);
-}
-.container-tags, .tags {
+.container-tags, .tags, .func, .about-tags {
     color: var(--function-color);
+}
+section {
+    padding-left: 1rem;
 }
 a {
     text-decoration: none;
+}
+ul {
+    list-style:none
+}
+.separator {
+    height: 4rem;
 }
 /* footer */
 footer {
@@ -21,6 +27,7 @@ footer {
 /* tricolor */
 #tricolorsvg{
     display: block;
+    width: 100vw;
 }
 .bitricolor{
     background: linear-gradient(180deg, #550834 0%, rgb(14, 17, 22) 9vh 10%);
@@ -33,7 +40,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     max-width: 80vw;
-    /* position: relative; */
     top: 5vh;
     margin: 0 auto;
 }
@@ -93,6 +99,7 @@ footer {
     list-style:none;
     background-color: #242424;
     padding-top: 3rem;
+    z-index: 9;
 }
 .navbar-icons-mobile {
     display:flex;
@@ -134,11 +141,15 @@ footer {
 .container-tags {
     display: inline-block;
     padding-left: 1rem;
-    margin: 6rem 0 2rem;
+    margin: 2rem 0 2rem;
 }
 .tags {
     display: inline-block;
     margin: 4rem 0;
+}
+.about-tags {
+    display: inline-block;
+    padding: 2rem 1rem;
 }
 /* home intro */
 .personal-intro {
@@ -155,15 +166,18 @@ footer {
 }
 /* curriculum vitae */
 .cv {
-    min-height: 70vh;
+    min-height: 57vh;
+    /* min-height: 70vh; */
     padding-left: 1rem;
 }
 .cv-header {
     font-size: 2rem;
+    word-spacing: -0.4rem;
+    white-space: nowrap;
     color:var(--header-text-color);
 }
 .cv-button {
-    display: block;
+    display: inline;
     padding-top: 2rem;
     fill:var(--function-color);
     transition: fill .3s cubic-bezier(.83,.4,.17,.62);
@@ -183,6 +197,7 @@ footer {
 .skills ul {
     display: inline-flex;
     flex-wrap: wrap;
+    padding: 1rem 1rem 0 0;
     gap: 1.5rem;
 }
 .skills ul li {
@@ -202,10 +217,17 @@ footer {
     color:var(--header-text-color);
     padding-bottom: 1rem;
 }
+.projects-carousel-container {
+    width: calc(100vw - 2rem);
+    overflow: hidden;
+    cursor: grab;
+
+}
 .projects-cards {
-    display: inline-flex;
-    gap: 3rem;
-    place-content: center;
+    display: flex;
+    gap: 2rem;
+    /* gap: 3rem; */
+    /* place-content: center; */
 }
 .proj-card {
     display: flex;
@@ -214,6 +236,7 @@ footer {
     width: 270px;
     background-color: #222935;
     border-radius: 10px;
+
 }
 .description {
     margin: 1rem;
@@ -271,8 +294,31 @@ footer {
 .made-with ul li a:hover{
     color: var(--nb-hover-icon-color);
 }
-
-
+/* about intro */
+.about-personal {
+    height: 35vh;
+}
+.about-title {
+    font-size: 2.5rem;
+    color: var(--function-color);
+}
+.about-personal p{
+    margin-bottom: 1rem;
+}
+/* about skills */
+.about-skills {
+    margin-bottom: 2rem;
+}
+.about-skills h2 {
+    margin-bottom: 1rem;
+}
+/* about also */
+.about-also {
+    margin-bottom: 2rem;
+}
+.about-also h2 {
+    margin-bottom: 1rem;
+}
 
 @media only screen and (max-width:1100px) {
     .header-container{
