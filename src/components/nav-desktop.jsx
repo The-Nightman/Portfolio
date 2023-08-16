@@ -21,7 +21,7 @@ const NavDesktop = () => {
             </Link>
           </li>
           <li>
-            <Link to="#" draggable="false" title="Email" aria-label="Email">
+            <Link to="mailto:keenan.brant@yahoo.co.uk?subject=Portfolio&body=Please write your message" target="_blank" draggable="false" title="Email" aria-label="Email">
               .email()
             </Link>
           </li>
