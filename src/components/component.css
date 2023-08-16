@@ -220,6 +220,7 @@ footer {
 }
 .projects-carousel-container {
   width: calc(100% - 2rem);
+  overflow: hidden;
   cursor: grab;
 }
 .projects-cards {
@@ -298,11 +299,39 @@ footer {
 }
 /* about intro */
 .about-personal {
-  height: 35vh;
+  min-height: 35vh;
+  margin-bottom: 4rem;
 }
 .about-title {
   font-size: 2.5rem;
   color: var(--function-color);
+}
+.about-ghub-linkedin {
+    display: flex;
+}
+.about-ghub-linkedin svg {
+    margin: 0 1rem 1rem 0;
+    fill: var(--nb-hover-color);
+    transition: fill 0.3s cubic-bezier(0.83, 0.4, 0.17, 0.62);
+}
+.about-ghub-linkedin svg:hover {
+    fill: var(--nb-hover-icon-color);
+  }
+.about-github {
+    margin: 0 1rem 0 0;
+    width: 3rem;
+    height: 3rem;
+}
+.about-linkedin {
+    width: 3rem;
+    height: 3rem;
+}
+.about-cv-button {
+    transition: fill 0.3s cubic-bezier(0.83, 0.4, 0.17, 0.62);
+    padding-bottom: 1rem;
+}
+.about-cv-button:hover {
+    fill: var(--nb-hover-icon-color);
 }
 .about-personal p {
   margin-bottom: 1rem;
