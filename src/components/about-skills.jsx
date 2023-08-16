@@ -1,7 +1,7 @@
 const AboutSkills = () => {
   return (
     <>
-      <div className="about-skills">
+      <section className="about-skills">
         <ul className="skills-grid">
           <h2 className="about-skills-title">Skills</h2>
           <li>
@@ -32,7 +32,7 @@ const AboutSkills = () => {
             <span>// SVG</span>
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 };

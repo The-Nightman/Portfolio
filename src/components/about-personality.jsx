@@ -1,7 +1,7 @@
 const AboutPersonality = () => {
   return (
     <>
-      <div className="about-also">
+      <section className="about-also">
         <ul className="also-grid">
           <h2 className="about-also-title">Also getting on with</h2>
           <li>
@@ -17,7 +17,7 @@ const AboutPersonality = () => {
             <span>// Bi/Pan Visibility</span>
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 };
