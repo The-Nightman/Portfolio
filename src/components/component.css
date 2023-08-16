@@ -227,9 +227,11 @@ footer {
     gap: 2rem;
 }
 .proj-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 620px;
     width: 270px;
     background-color: #222935;
     border-radius: 10px;
@@ -242,14 +244,19 @@ footer {
 .proj-card img {
     margin: 10px;
 }
+.proj-buttons-container {
+    position: absolute;
+    bottom: 2rem;
+    justify-content: space-between;
+}
 .proj-button {
     transition: color .2s ease-out;
     transition: background-color .2s ease-out;
     background-color:var(--function-color);
     border-radius: 5px;
     color: white;
-    padding: 10px 10px;
-    margin: 20px;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
 .project-github {
     fill: var(--nb-hover-icon-color);

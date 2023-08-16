@@ -31,7 +31,7 @@ const Projects = () => {
             dragConstraints={{ right: 0, left: -width }}
             className="projects-cards"
           >
-            {projects.map(({ image, name, body, repo, live }, index) => {
+            {projects.map(({ image, name, body, repo, live, fullstack }, index) => {
               return (
                 <motion.div className="carousel-item" key={index}>
                   <ProjectCard
@@ -40,6 +40,7 @@ const Projects = () => {
                     body={body}
                     repo={repo}
                     live={live}
+                    fullstack={fullstack}
                   />
                 </motion.div>
               );
