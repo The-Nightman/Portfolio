@@ -18,10 +18,13 @@ const MadeWith = () => {
               <span>// CSS</span>
             </li>
             <li>
-              <span>// JS</span>
+              <span>// JavaScript</span>
             </li>
             <li>
               <span>// React</span>
+            </li>
+            <li>
+              <span>// Framer Motion</span>
             </li>
             <li>
               <span>// Adobe Illustrator</span>
