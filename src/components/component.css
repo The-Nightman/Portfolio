@@ -221,13 +221,10 @@ footer {
     width: calc(100vw - 2rem);
     overflow: hidden;
     cursor: grab;
-
 }
 .projects-cards {
     display: flex;
     gap: 2rem;
-    /* gap: 3rem; */
-    /* place-content: center; */
 }
 .proj-card {
     display: flex;
