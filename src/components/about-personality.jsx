@@ -5,16 +5,16 @@ const AboutPersonality = () => {
         <ul className="also-grid">
           <h2 className="about-also-title">Also getting on with</h2>
           <li>
-            <span>// Gym</span>
+            <p>// Gym</p>
           </li>
           <li>
-            <span>// Music</span>
+            <p>// Music</p>
           </li>
           <li>
-            <span>// Games</span>
+            <p>// Games</p>
           </li>
           <li>
-            <span>// Bi/Pan Visibility</span>
+            <p>// Bi/Pan Visibility</p>
           </li>
         </ul>
       </section>

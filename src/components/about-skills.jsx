@@ -5,31 +5,46 @@ const AboutSkills = () => {
         <ul className="skills-grid">
           <h2 className="about-skills-title">Skills</h2>
           <li>
-            <span>// HTML</span>
+            <p>// HTML</p>
           </li>
           <li>
-            <span>// CSS</span>
+            <p>// CSS</p>
           </li>
           <li>
-            <span>// JS</span>
+            <p>// JavaScript</p>
           </li>
           <li>
-            <span>// Python</span>
+            <p>// NodeJS</p>
           </li>
           <li>
-            <span>// Adobe Illustrator</span>
+            <p>// Express</p>
           </li>
           <li>
-            <span>// Adobe Photoshop</span>
+            <p>// React</p>
           </li>
           <li>
-            <span>// Adobe Xd</span>
+            <p>// React Native</p>
           </li>
           <li>
-            <span>// Figma</span>
+            <p>// TDD (Jest)</p>
           </li>
           <li>
-            <span>// SVG</span>
+            <p>// Python</p>
+          </li>
+          <li>
+            <p>// Adobe Illustrator</p>
+          </li>
+          <li>
+            <p>// Adobe Photoshop</p>
+          </li>
+          <li>
+            <p>// Adobe Xd</p>
+          </li>
+          <li>
+            <p>// Figma</p>
+          </li>
+          <li>
+            <p>// SVG</p>
           </li>
         </ul>
       </section>
