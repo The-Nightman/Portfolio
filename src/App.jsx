@@ -1,5 +1,5 @@
 import { TriCol } from "./components";
-import { Home, About } from "./pages";
+import { Home, About, Error } from "./pages";
 import { Routes, Route } from "react-router-dom";
 import { useCallback } from "react";
 import Particles from "react-particles";
@@ -132,6 +132,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
