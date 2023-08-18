@@ -1,12 +1,14 @@
 import { ScrollToTop, TriCol } from "./components";
 import { Home, About, Error } from "./pages";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import { AnimatePresence } from "framer-motion";
 import "./components/component.css";
 
 function App() {
+  const location = useLocation();
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -130,11 +132,13 @@ function App() {
       />
       <ScrollToTop />
       <TriCol />
-      <Routes>
+      <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      </AnimatePresence>
     </div>
   );
 }
