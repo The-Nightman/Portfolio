@@ -32,6 +32,9 @@ const MadeWith = () => {
             <li>
               <span>// Adobe Photoshop</span>
             </li>
+            <li>
+              <span>// One Easter Egg</span>
+            </li>
           </ul>
           <ul className="col-music">
             <h3 className="made-with-col-title">
@@ -88,6 +91,16 @@ const MadeWith = () => {
             <li>
               <a href="https://open.spotify.com/track/5Vx3Cb6AM8TNqQqkwIMDh4?si=89a63267534843ba">
                 // Turbowolf
+              </a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/track/2gYriPqWA8iAKKP2pgW3OR?si=8e82352bdc4645da">
+                // Erric Holmes
+              </a>
+            </li>
+            <li>
+              <a href="https://open.spotify.com/track/2BSEWKPGXooXHbDDle1noH?si=a8c6c59064fa4a74">
+                // Suspended 4th
               </a>
             </li>
           </ul>
