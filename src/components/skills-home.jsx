@@ -1,3 +1,6 @@
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import {
   HtmlSVG,
   CssSVG,
@@ -9,11 +12,29 @@ import {
 } from "../assets";
 
 const SkillsHome = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <>
-      <section className="skills">
+      <motion.section
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 50 },
+        }}
+        transition={{ duration: 1 }}
+        initial="hidden"
+        animate={controls}
+        className="skills"
+      >
         <span className="tags">&lt;skills&gt;</span>
-        <h2 className="skills-title">
+        <h2 ref={ref} className="skills-title">
           <span>developing</span>
           <span className="func">.skills(</span>
           <span>in</span>
@@ -46,7 +67,7 @@ const SkillsHome = () => {
           </ul>
         </div>
         <span className="tags">&lt;/skills&gt;</span>
-      </section>
+      </motion.section>
     </>
   );
 };
