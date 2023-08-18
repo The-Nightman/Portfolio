@@ -1,11 +1,15 @@
 import { ReactComponent as MenuOpenSVG } from "../assets/menu.svg";
 import { ReactComponent as MenuCloseSVG } from "../assets/close.svg";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { NavDesktop, NavMobile } from "./";
+import { useCycle, AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileNav, toggleMobileNav] = useCycle(false, true);
+  const mobileRef = useRef(null);
+  const MotionMobileNav = motion(NavMobile);
   const isMobile = useMediaQuery({
     query: "(max-width: 800px)",
   });
@@ -19,20 +23,39 @@ const Navbar = () => {
         </div>
         {isMobile ? (
           <>
-            {!menuOpen ? (
-              <MenuOpenSVG
-                className="nav-responsive-icons"
-                onClick={() => setMenuOpen(true)}
-              />
-            ) : (
-              <>
-                <NavMobile />
+            <AnimatePresence>
+              {!mobileNav ? (
+                <MenuOpenSVG
+                  className="nav-responsive-icons"
+                  onClick={() => toggleMobileNav()}
+                />
+              ) : (
                 <MenuCloseSVG
                   className="nav-responsive-icons"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => toggleMobileNav()}
                 />
-              </>
-            )}
+              )}
+              {mobileNav && (
+                <MotionMobileNav
+                  key={"mobilenav"}
+                  ref={mobileRef}
+                  variants={{
+                    open: {
+                      x: -0,
+                      opacity: 1,
+                    },
+                    closed: {
+                      x: 200,
+                      opacity: 0,
+                    },
+                  }}
+                  transition={{ ease: "easeOut", duration: 0.3 }}
+                  initial="closed"
+                  animate="open"
+                  exit="closed"
+                />
+              )}
+            </AnimatePresence>
           </>
         ) : (
           <NavDesktop />
@@ -43,3 +66,17 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// variants={{
+//   open: {
+//     x: 0,
+//     opacity: 1,
+//   },
+//   closed: {
+//     x: -200,
+//     opacity: 1,
+//   },
+// }}
+// initial="closed"
+// animate="open"
+// exit="closed"
