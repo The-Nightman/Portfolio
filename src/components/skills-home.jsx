@@ -1,6 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useMediaQuery } from "react-responsive";
 import { useEffect } from "react";
+import Tooltip from "@mui/material/Tooltip";
 import {
   HtmlSVG,
   CssSVG,
@@ -14,6 +16,9 @@ import {
 const SkillsHome = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const isMobileDevice = useMediaQuery({
+    query: "(max-width: 1100px)",
+  });
 
   useEffect(() => {
     if (inView) {
@@ -40,30 +45,45 @@ const SkillsHome = () => {
           <span>in</span>
           <span className="func">)</span>
         </h2>
-        <span>/*view more skills in about*/</span>
+        <span>/*view more skills in about*/</span><br />
+        <span>{isMobileDevice ? "/*Hold to view*/" : "/*Hover to view*/"}</span>
         <div className="skills-svg-container">
           <ul>
-            <li>
-              <HtmlSVG className="skills-svg" />
-            </li>
+            <Tooltip title="HTML" followCursor>
+              <li>
+                <HtmlSVG className="skills-svg" />
+              </li>
+            </Tooltip>
+            <Tooltip title="CSS" followCursor>
             <li>
               <CssSVG className="skills-svg" />
             </li>
+            </Tooltip>
+            <Tooltip title="JavaScript" followCursor>
             <li>
               <JavaScriptSVG className="skills-svg" />
             </li>
+            </Tooltip>
+            <Tooltip title="React" followCursor>
             <li>
               <ReactSVG className="skills-svg" />
             </li>
+            </Tooltip>
+            <Tooltip title="Node JS" followCursor>
             <li>
               <NodeSVG className="skills-svg" />
             </li>
+            </Tooltip>
+            <Tooltip title="Express JS" followCursor>
             <li>
               <ExpressSVG className="skills-svg" />
             </li>
+            </Tooltip>
+            <Tooltip title="PostgreSql" followCursor>
             <li>
               <PsqlSVG className="skills-svg" />
             </li>
+            </Tooltip>
           </ul>
         </div>
         <span className="tags">&lt;/skills&gt;</span>
