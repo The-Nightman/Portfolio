@@ -37,6 +37,7 @@ const Navbar = () => {
               {mobileNav && (
                 <MotionMobileNav
                   key={"mobilenav"}
+                  toggleMobileNav={toggleMobileNav}
                   ref={mobileRef}
                   variants={{
                     open: {

@@ -8,7 +8,13 @@ const NavMobile = forwardRef((props, ref) => {
       <ul ref={ref}>
         <div className="navbar-mobile">
           <li>
-            <Link to="/" draggable="false" title="Home" aria-label="Home">
+            <Link
+              to="/"
+              draggable="false"
+              title="Home"
+              aria-label="Home"
+              onClick={() => props.toggleMobileNav(false)}
+            >
               K.dev()
             </Link>
           </li>
@@ -18,6 +24,7 @@ const NavMobile = forwardRef((props, ref) => {
               draggable="false"
               title="About"
               aria-label="About"
+              onClick={() => props.toggleMobileNav(false)}
             >
               .about()
             </Link>
@@ -29,6 +36,7 @@ const NavMobile = forwardRef((props, ref) => {
               draggable="false"
               title="Email"
               aria-label="Email"
+              onClick={() => props.toggleMobileNav(false)}
             >
               .email()
             </Link>
