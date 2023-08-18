@@ -1,4 +1,4 @@
-import { TriCol } from "./components";
+import { ScrollToTop, TriCol } from "./components";
 import { Home, About, Error } from "./pages";
 import { Routes, Route } from "react-router-dom";
 import { useCallback } from "react";
@@ -128,6 +128,7 @@ function App() {
           retina_detect: true,
         }}
       />
+      <ScrollToTop />
       <TriCol />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -11,6 +11,7 @@ import AboutSkills from "../components/about-skills";
 import NavMobile from "../components/nav-mobile";
 import NavDesktop from "../components/nav-desktop";
 import ProjectCard from "../components/project-card";
+import ScrollToTop from "./scrollToTop";
 
 
 export {
@@ -26,5 +27,6 @@ export {
   AboutSkills,
   NavMobile,
   NavDesktop,
-  ProjectCard
+  ProjectCard,
+  ScrollToTop
 };
