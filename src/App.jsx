@@ -26,7 +26,7 @@ function App() {
         options={{
           fps_limit: 144,
           interactivity: {
-            detect_on: "window",
+            detect_on: "canvas",
             events: {
               onHover: {
                 enable: true,
@@ -50,7 +50,17 @@ function App() {
                 particles: {
                   number: {
                     density: { enable: true, value_area: 800 },
-                    value: 80,
+                    value: 50,
+                  },
+                },
+                interactivity: {
+                  modes: {
+                    grab: {
+                      distance: 140,
+                      links: {
+                        opacity: 0.15,
+                      },
+                    },
                   },
                 },
               },
