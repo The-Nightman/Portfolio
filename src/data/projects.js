@@ -2,6 +2,7 @@ import pyPad from "../assets/pypadcard.png"
 import silba from "../assets/silba.png"
 import NCNewsFE from "../assets/NCNewsFE.png"
 import NCNewsBE from "../assets/NCNewsBE.png"
+import edJsonBuilder from "../assets/edjsonbuilder.png"
 
 const projects = [
   {
@@ -11,6 +12,14 @@ const projects = [
     repo: ["https://github.com/JoeAshcroft/SILBA","https://github.com/Kayphaz007/SILBA_BE"],
     live: null,
     fullstack: true
+  },
+  {
+    image: edJsonBuilder,
+    name: "ElDewrito Json Builder",
+    body: "An Electron based production app with an accessible UI/UX focus and automation, built to help server hosts build the required voting.json file to host servers. Actively maintained with GHub actions for CI/CD pipeline.",
+    repo: "https://github.com/The-Nightman/ED-VotingJSON",
+    live: null,
+    fullstack: false
   },
   {
     image: NCNewsFE,
