@@ -150,7 +150,7 @@ const MadeWith = () => {
                 href="https://open.spotify.com/track/2gYriPqWA8iAKKP2pgW3OR?si=8e82352bdc4645da"
                 target="_blank"
               >
-                // Erric Holmes
+                // Elliot Holmes
               </a>
             </li>
             <li>
@@ -167,6 +167,14 @@ const MadeWith = () => {
                 target="_blank"
               >
                 // Martin O'Donnell
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://open.spotify.com/track/15DKVRxHhKqRmIE2L6G82h?si=7e73be1984ed46bf"
+                target="_blank"
+              >
+                // CASIOPEA
               </a>
             </li>
           </ul>
