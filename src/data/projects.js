@@ -3,8 +3,17 @@ import silba from "../assets/silba.png"
 import NCNewsFE from "../assets/NCNewsFE.png"
 import NCNewsBE from "../assets/NCNewsBE.png"
 import edJsonBuilder from "../assets/edjsonbuilder.png"
+import IBDirect from "../assets/IBDirect.png"
 
 const projects = [
+  {
+    image: IBDirect,
+    name: "IBDirect",
+    body: "NHS based web portal for IBD patients to contact healthcare specialists and staff to monitor, update and create records & appointments. Responsive page designed for portable devices with a C# API using EFCore and websockets.",
+    repo: ["https://github.com/The-Nightman/IBDirect","https://github.com/The-Nightman/IBDirectAPI"],
+    live: null,
+    fullstack: true
+  },
   {
     image: silba,
     name: "SILBA",
