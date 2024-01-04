@@ -6,12 +6,15 @@ const AboutSkills = () => {
         <ul className="skills-grid">
           <li>
             <p>
-              /* HTML, CSS, JavaScript, Node, Express, React, React Native,
-              Python, SVG */
+              /* HTML, CSS, Tailwind, JavaScript, Node, Express, React, React
+              Native, C#, .NET 7, ASP.NET core, SQL, PostgreSQL, Python, SVG */
             </p>
           </li>
           <li>
-            <p>/* TDD (Jest), MVC, UX/UI */</p>
+            <p>
+              /* TDD (Jest, Swagger, Insomnia), MVC, RESTful API, GitHub
+              Actions, UX/UI */
+            </p>
           </li>
           <li>
             <p>/* Adobe Illustrator, Adobe Photoshop, Adobe Xd, Figma */</p>
