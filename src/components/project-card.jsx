@@ -3,7 +3,7 @@ import { ReactComponent as GithubSVG } from "../assets/github.svg";
 const ProjectCard = ({ image, name, body, repo, live, fullstack }) => {
   return (
     <div className="proj-card">
-      <img src={image} width="250" height="250" draggable="false" />
+      <img src={image} alt={`${name} Project Preview Image`} width="250" height="250" draggable="false" />
       <p className="description">
         {name}
         <br />
@@ -18,6 +18,7 @@ const ProjectCard = ({ image, name, body, repo, live, fullstack }) => {
             target="_blank"
             className="proj-button"
             draggable="false"
+            aria-label={`View ${name} repository`}
           >
             <GithubSVG className="project-github" />
             <span>Repository</span>
@@ -30,6 +31,7 @@ const ProjectCard = ({ image, name, body, repo, live, fullstack }) => {
               target="_blank"
               className="proj-button"
               draggable="false"
+              aria-label={`View ${name} front-end repository`}
             >
               <GithubSVG className="project-github" />
               <span>FE Repo</span>
@@ -40,6 +42,7 @@ const ProjectCard = ({ image, name, body, repo, live, fullstack }) => {
               target="_blank"
               className="proj-button"
               draggable="false"
+              aria-label={`View ${name} back-end repository`}
             >
               <GithubSVG className="project-github" />
               <span>BE Repo</span>
@@ -53,6 +56,7 @@ const ProjectCard = ({ image, name, body, repo, live, fullstack }) => {
               target="_blank"
               className="proj-button"
               draggable="false"
+              aria-label={`View ${name} live app`}
             >
               <span>Live app</span>
             </a>
@@ -62,6 +66,7 @@ const ProjectCard = ({ image, name, body, repo, live, fullstack }) => {
               target="_blank"
               className="proj-button"
               draggable="false"
+              aria-label={`View ${name} repository`}
             >
               <GithubSVG className="project-github" />
               <span>Repo</span>
