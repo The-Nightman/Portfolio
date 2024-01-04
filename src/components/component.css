@@ -286,6 +286,11 @@ footer {
   gap: 8rem;
   width: 50%;
 }
+.made-with-col-title {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: var(--header-text-color);
+}
 .made-with ul li {
   color: var(--function-color);
   list-style: none;

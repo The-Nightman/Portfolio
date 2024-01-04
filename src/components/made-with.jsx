@@ -27,12 +27,14 @@ const MadeWith = () => {
         <h2 className="tags">/*This site was built with*/</h2>
         <div className="made-with-grid">
           <ul className="col-tools">
-            <h3 ref={ref} className="made-with-col-title">
-              <span>def</span>
-              <span className="func">(</span>
-              <span>_tools</span>
-              <span className="func">)</span>
-            </h3>
+            <li>
+              <p ref={ref} className="made-with-col-title">
+                <span>def</span>
+                <span className="func">(</span>
+                <span>_tools</span>
+                <span className="func">)</span>
+              </p>
+            </li>
             <li>
               <span>// HTML</span>
             </li>
@@ -59,12 +61,14 @@ const MadeWith = () => {
             </li>
           </ul>
           <ul className="col-music">
-            <h3 className="made-with-col-title">
-              <span>def</span>
-              <span className="func">(</span>
-              <span>_music</span>
-              <span className="func">)</span>
-            </h3>
+            <li>
+              <p className="made-with-col-title">
+                <span>def</span>
+                <span className="func">(</span>
+                <span>_music</span>
+                <span className="func">)</span>
+              </p>
+            </li>
             <li>
               <a
                 href="https://open.spotify.com/track/7wdwIaXUuzlu1grzWMFRJm?si=5abfe714ff464a5b"
