@@ -319,6 +319,7 @@ footer {
 }
 .about-title {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: var(--function-color);
 }
 .about-ghub-linkedin {
