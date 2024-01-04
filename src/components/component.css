@@ -1,7 +1,7 @@
 :root {
-  --nb-hover-color: #e92a4b;
+  --nb-hover-color: #E9304E;
   --nb-hover-icon-color: #2ae9c8;
-  --function-color: #e92a4b;
+  --function-color: #E9304E;
   --header-text-color: #e0e0e0;
 }
 .container-tags,
@@ -93,7 +93,7 @@ footer {
   right: 0;
   bottom: 150px;
 }
-.header-navbar-mobile ul {
+.navbar-mobile-list-cont {
   display: block;
   position: fixed;
   top: 0;
@@ -105,15 +105,6 @@ footer {
   padding-top: 3rem;
   z-index: 9;
 }
-.navbar-icons-mobile {
-  display: flex;
-  position: fixed;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  row-gap: 2rem;
-  right: 0;
-}
 .header-navbar-mobile ul li {
   display: block;
   text-align: right;
@@ -122,23 +113,40 @@ footer {
   font-weight: 700;
   margin: 0 1rem;
 }
+#navbar-icons-mobile {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  row-gap: 2rem;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
 .header-navbar-mobile ul li a {
   text-decoration: none;
   transition: color 0.2s ease-out;
   color: var(--header-text-color);
 }
-.header-navbar-mobile ul li a svg {
+#navbar-icons-mobile div a svg {
   fill: var(--function-color);
   transition: fill 0.3s cubic-bezier(0.83, 0.4, 0.17, 0.62);
 }
 .header-navbar-mobile ul li a:hover {
   color: var(--nb-hover-color);
 }
-.header-navbar-mobile ul li a:hover svg {
+#navbar-icons-mobile div a:hover svg {
   fill: var(--nb-hover-icon-color);
 }
 .github-mobile,
 .linkedin-mobile {
+  display: block;
+  text-align: right;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 1rem;
   width: 4rem;
   height: 4rem;
 }
