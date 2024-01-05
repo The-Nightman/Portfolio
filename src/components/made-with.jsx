@@ -181,6 +181,14 @@ const MadeWith = () => {
                 // CASIOPEA
               </a>
             </li>
+            <li>
+              <a
+                href="https://open.spotify.com/track/4CpLkaW3Hjr8sIKvdA5I0t?si=2108b6a2a69a4c15"
+                target="_blank"
+              >
+                // Delicate Steve
+              </a>
+            </li>
           </ul>
         </div>
       </motion.section>

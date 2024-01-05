@@ -1,7 +1,7 @@
 const TriCol = () => {
   return (
     <>
-      <div className="bitricolor">
+      <div className="bitricolor" aria-hidden="true">
         <svg
           version="1.1"
           id="tricolorsvg"
