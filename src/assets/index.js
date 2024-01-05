@@ -8,6 +8,10 @@ import { ReactComponent as PsqlSVG } from "./psql.svg";
 import { ReactComponent as CvButton } from "./cvbutton.svg";
 import { ReactComponent as GithubSVG } from "./github.svg";
 import { ReactComponent as LinkedinSVG } from "./linkedin.svg";
+import { ReactComponent as DotnetSVG } from "./dotnet.svg";
+import { ReactComponent as CSharpSVG } from "./csharp.svg";
+import { ReactComponent as TailwindSVG } from "./tailwind.svg";
+import { ReactComponent as ReactNativeSVG } from "./reactnative.svg";
 
 export {
   HtmlSVG,
@@ -20,4 +24,8 @@ export {
   CvButton,
   GithubSVG,
   LinkedinSVG,
+  DotnetSVG,
+  CSharpSVG,
+  TailwindSVG,
+  ReactNativeSVG
 };

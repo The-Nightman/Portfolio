@@ -11,6 +11,10 @@ import {
   NodeSVG,
   ExpressSVG,
   PsqlSVG,
+  DotnetSVG,
+  CSharpSVG,
+  TailwindSVG,
+  ReactNativeSVG,
 } from "../assets";
 
 const SkillsHome = () => {
@@ -45,7 +49,8 @@ const SkillsHome = () => {
           <span>in</span>
           <span className="func">)</span>
         </h2>
-        <span>/*view more skills in about*/</span><br />
+        <span>/*view more skills in about*/</span>
+        <br />
         <span>{isMobileDevice ? "/*Hold to view*/" : "/*Hover to view*/"}</span>
         <div className="skills-svg-container">
           <ul>
@@ -55,34 +60,54 @@ const SkillsHome = () => {
               </li>
             </Tooltip>
             <Tooltip title="CSS" followCursor>
-            <li>
-              <CssSVG className="skills-svg" />
-            </li>
+              <li>
+                <CssSVG className="skills-svg" />
+              </li>
+            </Tooltip>
+            <Tooltip title="TailwindCSS" followCursor>
+              <li>
+                <TailwindSVG className="skills-svg" />
+              </li>
             </Tooltip>
             <Tooltip title="JavaScript" followCursor>
-            <li>
-              <JavaScriptSVG className="skills-svg" />
-            </li>
+              <li>
+                <JavaScriptSVG className="skills-svg" />
+              </li>
             </Tooltip>
             <Tooltip title="React" followCursor>
-            <li>
-              <ReactSVG className="skills-svg" />
-            </li>
+              <li>
+                <ReactSVG className="skills-svg" />
+              </li>
+            </Tooltip>
+            <Tooltip title="React Native" followCursor>
+              <li>
+                <ReactNativeSVG className="skills-svg" />
+              </li>
             </Tooltip>
             <Tooltip title="Node JS" followCursor>
-            <li>
-              <NodeSVG className="skills-svg" />
-            </li>
+              <li>
+                <NodeSVG className="skills-svg" />
+              </li>
             </Tooltip>
             <Tooltip title="Express JS" followCursor>
-            <li>
-              <ExpressSVG className="skills-svg" />
-            </li>
+              <li>
+                <ExpressSVG className="skills-svg" />
+              </li>
+            </Tooltip>
+            <Tooltip title="C# (C Sharp)" followCursor>
+              <li>
+                <CSharpSVG className="skills-svg" />
+              </li>
+            </Tooltip>
+            <Tooltip title=".Net 7 / ASP.NET Core" followCursor>
+              <li>
+                <DotnetSVG className="skills-svg" />
+              </li>
             </Tooltip>
             <Tooltip title="PostgreSql" followCursor>
-            <li>
-              <PsqlSVG className="skills-svg" />
-            </li>
+              <li>
+                <PsqlSVG className="skills-svg" />
+              </li>
             </Tooltip>
           </ul>
         </div>

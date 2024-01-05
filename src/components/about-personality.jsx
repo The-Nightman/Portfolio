@@ -2,8 +2,8 @@ const AboutPersonality = () => {
   return (
     <>
       <section className="about-also">
+        <h2 className="about-also-title">Also getting on with</h2>
         <ul className="also-grid">
-          <h2 className="about-also-title">Also getting on with</h2>
           <li>
             <p>// Gym</p>
           </li>

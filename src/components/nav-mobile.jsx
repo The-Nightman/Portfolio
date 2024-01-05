@@ -5,8 +5,8 @@ import { forwardRef } from "react";
 const NavMobile = forwardRef((props, ref) => {
   return (
     <nav className="header-navbar-mobile">
-      <ul ref={ref}>
-        <div className="navbar-mobile">
+      <div className="navbar-mobile-list-cont" ref={ref}>
+        <ul className="navbar-mobile">
           <li>
             <Link
               to="/"
@@ -41,8 +41,8 @@ const NavMobile = forwardRef((props, ref) => {
               .email()
             </Link>
           </li>
-          <div className="navbar-icons-mobile">
-            <li className="github-mobile" title="GitHub">
+          <li id="navbar-icons-mobile">
+            <div className="github-mobile" title="GitHub">
               <Link
                 to="https://github.com/The-Nightman"
                 target="_blank"
@@ -52,8 +52,8 @@ const NavMobile = forwardRef((props, ref) => {
               >
                 <GithubSVG />
               </Link>
-            </li>
-            <li className="linkedin-mobile" title="LinkedIn">
+            </div>
+            <div className="linkedin-mobile" title="LinkedIn">
               <Link
                 to="https://www.linkedin.com/in/keenan-brant/"
                 title="Linked in"
@@ -63,10 +63,10 @@ const NavMobile = forwardRef((props, ref) => {
               >
                 <LinkedinSVG />
               </Link>
-            </li>
-          </div>
-        </div>
-      </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 });

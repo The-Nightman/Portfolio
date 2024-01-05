@@ -5,9 +5,7 @@ const IntroAbout = () => {
   return (
     <>
       <section className="about-personal">
-        <h1 className="about-title">
-          <p className="name">Keenan Brant</p>
-        </h1>
+        <h1 className="about-title">Keenan Brant</h1>
         <div className="about-ghub-linkedin">
           <a
             href="https://github.com/The-Nightman"
