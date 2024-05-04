@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <header className="mb-16">
       <div className="flex flex-row justify-between max-[1100px]:max-w-[90vw] max-w-[80vw] mx-auto">
-        <h1 className="text-primary font-bold text-nowrap">
+        <h1 className="max-md:absolute max-md:top-6 max-md:left-4 text-primary font-bold text-nowrap">
           KBrant
           <span className="text-accent">
             .dev<span aria-hidden>()</span>
