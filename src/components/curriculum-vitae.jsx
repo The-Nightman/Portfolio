@@ -24,26 +24,35 @@ const CurriculumVitae = () => {
         transition={{ duration: 1 }}
         initial="hidden"
         animate={controls}
-        className="cv"
+        className="flex flex-col min-h-[60vh]"
       >
-        <span className="tags">&lt;curriculum vitae&gt;</span>
-        <h2 className="cv-header" ref={ref}>
-          <span>myCV(</span>
-          <span className="func">&#40;&#41; =&gt; cv.pdf</span>
-          <span>)</span>
+        <span className="text-accent my-16" aria-hidden>
+          {"<curriculum vitae>"}
+        </span>
+        <h2
+          className="mb-8 text-primary text-[2rem]/[2.25rem] [word-spacing:-0.4rem] text-nowrap font-bold"
+          ref={ref}
+        >
+          <span aria-hidden>
+            <span>myCV(</span>
+            <span className="text-accent">{"() => cv.pdf"}</span>
+            <span>)</span>
+          </span>
+          <span className="sr-only">my cv / résumé</span>
         </h2>
-        <div className="cv-button-container">
-          <a
-            href={cvPDF}
-            title="Open CV"
-            aria-label="Open Cv"
-            target="_blank"
-            draggable="false"
-          >
-            <CvButton className="cv-button" />
-          </a>
-        </div>
-        <span className="tags">&lt;/curriculum vitae&gt;</span>
+        <a
+          className="w-min"
+          href={cvPDF}
+          title="Open/Download CV in new tab"
+          aria-label="Open/Download CV/résumé in new tab"
+          target="_blank"
+          draggable="false"
+        >
+          <CvButton className="fill-accent hover:fill-accentComplementary transition-colors duration-300" />
+        </a>
+        <span className="text-accent my-16" aria-hidden>
+          {"</curriculum vitae>"}
+        </span>
       </motion.section>
     </>
   );
