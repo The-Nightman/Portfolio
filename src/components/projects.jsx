@@ -30,14 +30,21 @@ const Projects = () => {
         transition={{ duration: 1 }}
         initial="hidden"
         animate={controls}
-        className="projects"
+        className="flex flex-col min-h-[70vh] overflow-x-hidden"
+        tabIndex={-1}
       >
-        <span className="tags">&lt;projects&gt;</span>
-        <h2 ref={ref} className="projects-title">
+        <span className="text-accent my-16" aria-hidden>
+          {"<projects>"}
+        </span>
+        <h2 ref={ref} className="mb-4 text-[2rem]/[1.2] text-primary font-bold">
           <span>projects</span>
-          <span className="func">&#123;</span>
+          <span className="text-accent" aria-hidden>
+            {"{"}
+          </span>
           <span>slider</span>
-          <span className="func">&#125;</span>
+          <span className="text-accent" aria-hidden>
+            {"}"}
+          </span>
         </h2>
         <motion.div
           variants={{
@@ -48,18 +55,18 @@ const Projects = () => {
           initial="hidden"
           animate={controls}
           ref={carousel}
-          className="projects-carousel-container"
-          whileTap={{ cursor: "grabbing" }}
+          className="w-full"
         >
-          <motion.div
+          <motion.ul
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
-            className="projects-cards"
+            className="flex gap-8 cursor-grab"
+            whileTap={{ cursor: "grabbing" }}
           >
             {projects.map(
               ({ image, name, body, repo, live, fullstack }, index) => {
                 return (
-                  <motion.div className="carousel-item" key={index}>
+                  <motion.li key={name}>
                     <ProjectCard
                       image={image}
                       name={name}
@@ -68,13 +75,15 @@ const Projects = () => {
                       live={live}
                       fullstack={fullstack}
                     />
-                  </motion.div>
+                  </motion.li>
                 );
               }
             )}
-          </motion.div>
+          </motion.ul>
         </motion.div>
-        <span className="tags">&lt;/projects&gt;</span>
+        <span className="text-accent my-16" aria-hidden>
+          {"</projects>"}
+        </span>
       </motion.section>
     </>
   );
