@@ -1,10 +1,13 @@
 const TriCol = () => {
   return (
     <>
-      <div className="bitricolor" aria-hidden="true">
+      <div
+        className="relative min-h-[9vh] bg-gradient-to-b from-[#550834]"
+        aria-hidden="true"
+      >
         <svg
           version="1.1"
-          id="tricolorsvg"
+          className="block w-full"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           x="0px"

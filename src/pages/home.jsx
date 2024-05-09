@@ -9,28 +9,35 @@ import {
 import { motion } from "framer-motion";
 
 const Home = () => {
+  const generateDate = () => {
+    return new Date().getFullYear();
+  };
+
   return (
     <>
       <Navbar />
       <motion.div
         transition={{ ease: "easeIn", duration: 0.6 }}
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}
-        className="home-page"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="flex flex-col w-11/12 md:w-9/12 mx-auto"
       >
-        <div className="separator" />
-        <span className="container-tags">&lt;container&gt;</span>
+        <span className="my-8 text-accent select-none" aria-hidden>
+          {"<container>"}
+        </span>
         <IntroHome />
         <CurriculumVitae />
         <SkillsHome />
         <Projects />
-        <span className="container-tags">&lt;/container&gt;</span>
+        <span className="my-8 text-accent select-none" aria-hidden>
+          {"</container>"}
+        </span>
         <MadeWith />
-        <footer>
-          <p>
-            Rev1.5 Built in 2023
-            <br />© 2023 Keenan Brant
+        <footer className="mb-8 self-center">
+          <p className="flex flex-col text-center">
+            Rev2 Built in 2024
+            <span>© {generateDate()} Keenan Brant</span>
           </p>
         </footer>
       </motion.div>

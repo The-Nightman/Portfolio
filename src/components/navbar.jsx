@@ -14,23 +14,25 @@ const Navbar = () => {
   });
 
   return (
-    <header>
-      <div className="header-container">
-        <div className="nav-breadcrumb">
-          <span className="name">KBrant</span>
-          <span className="func">.dev()</span>
-        </div>
+    <header className="mb-16">
+      <div className="flex flex-row justify-between max-[1100px]:max-w-[90vw] max-w-[80vw] mx-auto">
+        <span className="max-md:absolute max-md:top-6 max-md:left-4 text-primary font-bold text-nowrap">
+          KBrant
+          <span className="text-accent">
+            .dev<span aria-hidden>()</span>
+          </span>
+        </span>
         {isMobile ? (
           <>
             <AnimatePresence>
               {!mobileNav ? (
                 <MenuOpenSVG
-                  className="nav-responsive-icons"
+                  className="fixed top-4 right-4 h-8 z-10"
                   onClick={() => toggleMobileNav()}
                 />
               ) : (
                 <MenuCloseSVG
-                  className="nav-responsive-icons"
+                  className="fixed top-4 right-4 h-8 z-10"
                   onClick={() => toggleMobileNav()}
                 />
               )}
