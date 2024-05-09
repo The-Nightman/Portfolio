@@ -12,6 +12,8 @@ import { ReactComponent as DotnetSVG } from "./dotnet.svg";
 import { ReactComponent as CSharpSVG } from "./csharp.svg";
 import { ReactComponent as TailwindSVG } from "./tailwind.svg";
 import { ReactComponent as ReactNativeSVG } from "./reactnative.svg";
+import { ReactComponent as DockerSVG } from "./docker.svg";
+import { ReactComponent as TypeScriptSVG } from "./typescript.svg";
 
 export {
   HtmlSVG,
@@ -27,5 +29,7 @@ export {
   DotnetSVG,
   CSharpSVG,
   TailwindSVG,
-  ReactNativeSVG
+  ReactNativeSVG,
+  DockerSVG,
+  TypeScriptSVG,
 };
