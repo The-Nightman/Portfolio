@@ -14,6 +14,8 @@ import {
   CSharpSVG,
   TailwindSVG,
   ReactNativeSVG,
+  DockerSVG,
+  TypeScriptSVG,
 } from "../assets";
 
 const SkillsHome = () => {
@@ -66,70 +68,82 @@ const SkillsHome = () => {
           </span>
         </p>
         <ul className="inline-flex flex-wrap gap-6 mt-4">
-          <Tooltip title="HTML" followCursor>
+          <Tooltip title="HTML" placement="top" followCursor>
             <li>
               <span className="sr-only">HTML</span>
               <HtmlSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="CSS" followCursor>
+          <Tooltip title="CSS" placement="top" followCursor>
             <li>
               <span className="sr-only">CSS</span>
               <CssSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="TailwindCSS" followCursor>
+          <Tooltip title="TailwindCSS" placement="top" followCursor>
             <li>
               <span className="sr-only">Tailwind CSS</span>
               <TailwindSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="JavaScript" followCursor>
+          <Tooltip title="JavaScript" placement="top" followCursor>
             <li>
               <span className="sr-only">JavaScript</span>
               <JavaScriptSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="React" followCursor>
+          <Tooltip title="TypeScript" placement="top" followCursor>
+            <li>
+              <span className="sr-only">TypeScript</span>
+              <TypeScriptSVG className="h-[3.75rem] w-[3.75rem]" />
+            </li>
+          </Tooltip>
+          <Tooltip title="React" placement="top" followCursor>
             <li>
               <span className="sr-only">React JS</span>
               <ReactSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="React Native" followCursor>
+          <Tooltip title="React Native" placement="top" followCursor>
             <li>
               <span className="sr-only">React Native</span>
               <ReactNativeSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Node JS" followCursor>
+          <Tooltip title="Node JS" placement="top" followCursor>
             <li>
               <span className="sr-only">Node JS</span>
               <NodeSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Express JS" followCursor>
+          <Tooltip title="Express JS" placement="top" followCursor>
             <li>
               <span className="sr-only">Express JS</span>
               <ExpressSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="C# (C Sharp)" followCursor>
+          <Tooltip title="C# (C Sharp)" placement="top" followCursor>
             <li>
               <span className="sr-only">C Sharp</span>
               <CSharpSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title=".Net 7 / ASP.NET Core" followCursor>
+          <Tooltip title=".Net 7 / ASP.NET Core" placement="top" followCursor>
             <li>
               <span className="sr-only">Dotnet 7 / ASP.NET Core</span>
               <DotnetSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="PostgreSql" followCursor>
+          <Tooltip title="PostgreSql" placement="top" followCursor>
             <li>
               <span className="sr-only">PostgreSql</span>
               <PsqlSVG className="h-[3.75rem] w-[3.75rem]" />
+            </li>
+          </Tooltip>
+          <Tooltip title="Docker" placement="top" followCursor>
+            <li>
+              <span className="sr-only">Docker</span>
+              <DockerSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
         </ul>
