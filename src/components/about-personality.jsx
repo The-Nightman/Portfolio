@@ -1,20 +1,28 @@
 const AboutPersonality = () => {
   return (
     <>
-      <section className="about-also">
-        <h2 className="about-also-title">Also getting on with</h2>
-        <ul className="also-grid">
+      <section className="flex flex-col mb-8">
+        <h2 className="mb-4 text-2xl font-bold">Also getting on with</h2>
+        <ul>
           <li>
-            <p>// Gym</p>
+            <p>
+              <span aria-hidden>//</span> Gym
+            </p>
           </li>
           <li>
-            <p>// Music</p>
+            <p>
+              <span aria-hidden>//</span> Music
+            </p>
           </li>
           <li>
-            <p>// Games</p>
+            <p>
+              <span aria-hidden>//</span> Games
+            </p>
           </li>
           <li>
-            <p>// Bi/Pan Visibility</p>
+            <p>
+              <span aria-hidden>//</span> Bi/Pan Visibility
+            </p>
           </li>
         </ul>
       </section>
