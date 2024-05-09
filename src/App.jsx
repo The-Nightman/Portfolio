@@ -5,7 +5,6 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { AnimatePresence } from "framer-motion";
-import "./components/component.css";
 
 function App() {
   const location = useLocation();
@@ -20,7 +19,7 @@ function App() {
   return (
     <div>
       <Particles
-        id="tsparticles"
+        className="fixed -z-10"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
@@ -143,11 +142,11 @@ function App() {
       <ScrollToTop />
       <TriCol />
       <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
       </AnimatePresence>
     </div>
   );
