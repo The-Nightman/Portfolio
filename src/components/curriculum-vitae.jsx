@@ -26,7 +26,7 @@ const CurriculumVitae = () => {
         animate={controls}
         className="flex flex-col min-h-[60vh]"
       >
-        <span className="text-accent my-16" aria-hidden>
+        <span className="text-accent my-16 select-none" aria-hidden>
           {"<curriculum vitae>"}
         </span>
         <h2
@@ -50,7 +50,7 @@ const CurriculumVitae = () => {
         >
           <CvButton className="fill-accent hover:fill-accentComplementary transition-colors duration-300" />
         </a>
-        <span className="text-accent my-16" aria-hidden>
+        <span className="text-accent my-16 select-none" aria-hidden>
           {"</curriculum vitae>"}
         </span>
       </motion.section>

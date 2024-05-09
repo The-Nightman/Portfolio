@@ -33,7 +33,7 @@ const Projects = () => {
         className="flex flex-col min-h-[70vh] overflow-x-hidden"
         tabIndex={-1}
       >
-        <span className="text-accent my-16" aria-hidden>
+        <span className="text-accent my-16 select-none" aria-hidden>
           {"<projects>"}
         </span>
         <h2 ref={ref} className="mb-4 text-[2rem]/[1.2] text-primary font-bold">
@@ -81,7 +81,7 @@ const Projects = () => {
             )}
           </motion.ul>
         </motion.div>
-        <span className="text-accent my-16" aria-hidden>
+        <span className="text-accent my-16 select-none" aria-hidden>
           {"</projects>"}
         </span>
       </motion.section>

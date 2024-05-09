@@ -38,7 +38,7 @@ const SkillsHome = () => {
         animate={controls}
         className="flex flex-col min-h-[70vh]"
       >
-        <span className="text-accent my-16" aria-hidden>
+        <span className="text-accent my-16 select-none" aria-hidden>
           {"<skills>"}
         </span>
         <h2
@@ -133,7 +133,7 @@ const SkillsHome = () => {
             </li>
           </Tooltip>
         </ul>
-        <span className="text-accent my-16" aria-hidden>
+        <span className="text-accent my-16 select-none" aria-hidden>
           {"</skills>"}
         </span>
       </motion.section>

@@ -2,7 +2,7 @@ const IntroHome = () => {
   return (
     <>
       <section className="flex flex-col min-h-[60vh]">
-        <span className="my-16 text-accent" aria-hidden>
+        <span className="my-16 text-accent select-none" aria-hidden>
           {"<intro>"}
         </span>
         <h1 className="text-5xl font-bold text-primary">
@@ -17,7 +17,7 @@ const IntroHome = () => {
           <br />
           based in the UK
         </p>
-        <span className="text-accent my-16" aria-hidden>
+        <span className="text-accent my-16 select-none" aria-hidden>
           {"</intro>"}
         </span>
       </section>
