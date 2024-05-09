@@ -9,7 +9,7 @@ const projects = [
   {
     image: IBDirect,
     name: "IBDirect",
-    body: "NHS based web portal for IBD patients to contact healthcare specialists and staff to monitor, update and create records & appointments. Responsive page designed for portable devices with a C# API using EFCore and websockets.",
+    body: "NHS based web-portal for IBD patients and healthcare specialists to monitor, update and create records & appointments. Responsive design for devices used by NHS staff and patients with an ASP.NET API using EFCore and SignalR.",
     repo: ["https://github.com/The-Nightman/IBDirect","https://github.com/The-Nightman/IBDirectAPI"],
     live: "https://ibdirect.net/",
     fullstack: true
