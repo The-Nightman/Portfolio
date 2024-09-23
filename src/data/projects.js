@@ -4,8 +4,17 @@ import NCNewsFE from "../assets/NCNewsFE.png"
 import NCNewsBE from "../assets/NCNewsBE.png"
 import edJsonBuilder from "../assets/edjsonbuilder.png"
 import IBDirect from "../assets/IBDirect.png"
+import AtomiFit from "../assets/atomifit.png"
 
 const projects = [
+  {
+    image: AtomiFit,
+    name: "AtomiFit",
+    body: "WIP cross-platform fitness tracker app. Planned as a freemium app with features to bridge the gap in the current market such as: detailed analytics, out of the box programs, ML object detection for bar path tracking. Built with React Native w/TS, DrizzleORM and native libraries incl. SQLite.",
+    repo: "https://github.com/The-Nightman/AtomiFit",
+    live: null,
+    fullstack: false
+  },
   {
     image: IBDirect,
     name: "IBDirect",
