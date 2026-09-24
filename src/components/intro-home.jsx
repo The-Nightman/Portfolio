@@ -13,7 +13,7 @@ const IntroHome = () => {
         </h1>
         <p className="text-[2rem]/[1.2] text-accent">Keenan Brant</p>
         <p>
-          Junior Software Developer
+          Undergraduate Student Software Engineer
           <br />
           based in the UK
         </p>
