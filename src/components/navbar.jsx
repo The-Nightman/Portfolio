@@ -1,9 +1,8 @@
-import { ReactComponent as MenuOpenSVG } from "../assets/menu.svg";
-import { ReactComponent as MenuCloseSVG } from "../assets/close.svg";
 import { NavDesktop, NavMobile } from "./";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useCycle, AnimatePresence, motion } from "framer-motion";
+import { MenuOpenSVG, MenuCloseSVG } from "../assets";
 
 const Navbar = () => {
   const [mobileNav, toggleMobileNav] = useCycle(false, true);

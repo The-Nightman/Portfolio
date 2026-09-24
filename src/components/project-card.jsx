@@ -1,4 +1,4 @@
-import { ReactComponent as GithubSVG } from "../assets/github.svg";
+import { GithubSVG } from "../assets";
 
 const ProjectCard = ({ image, name, body, repo, live, fullstack }) => {
   const buttonDict = {
