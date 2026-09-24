@@ -1,10 +1,10 @@
-import pyPad from "../assets/pypadcard.png";
-import silba from "../assets/silba.png";
-import NCNewsFE from "../assets/NCNewsFE.png";
-import NCNewsBE from "../assets/NCNewsBE.png";
-import edrJsonBuilder from "../assets/edrjsonbuilder.png";
-import IBDirect from "../assets/IBDirect.png";
-import AtomiFit from "../assets/atomifit.png";
+import pyPad from "../assets/projectImages/pypadcard.png";
+import silba from "../assets/projectImages/silba.png";
+import NCNewsFE from "../assets/projectImages/NCNewsFE.png";
+import NCNewsBE from "../assets/projectImages/NCNewsBE.png";
+import edrJsonBuilder from "../assets/projectImages/edrjsonbuilder.png";
+import IBDirect from "../assets/projectImages/IBDirect.png";
+import AtomiFit from "../assets/projectImages/atomifit.png";
 
 const projects = [
   {
