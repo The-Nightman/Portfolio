@@ -1,26 +1,33 @@
-import { ReactComponent as HtmlSVG } from "./html.svg";
-import { ReactComponent as CssSVG } from "./css.svg";
-import { ReactComponent as JavaScriptSVG } from "./javascript.svg";
-import { ReactComponent as ReactSVG } from "./react.svg";
-import { ReactComponent as NodeSVG } from "./node.svg";
-import { ReactComponent as ExpressSVG } from "./express.svg";
-import { ReactComponent as PsqlSVG } from "./psql.svg";
-import { ReactComponent as CvButton } from "./cvbutton.svg";
-import { ReactComponent as GithubSVG } from "./github.svg";
-import { ReactComponent as LinkedinSVG } from "./linkedin.svg";
-import { ReactComponent as DotnetSVG } from "./dotnet.svg";
-import { ReactComponent as CSharpSVG } from "./csharp.svg";
-import { ReactComponent as TailwindSVG } from "./tailwind.svg";
-import { ReactComponent as ReactNativeSVG } from "./reactnative.svg";
-import { ReactComponent as DockerSVG } from "./docker.svg";
-import { ReactComponent as TypeScriptSVG } from "./typescript.svg";
-import { ReactComponent as MysqlSVG } from "./mysql.svg";
-import { ReactComponent as SqliteSVG } from "./sqlite.svg";
-import { ReactComponent as NextJsSVG } from "./nextjs.svg";
-import { ReactComponent as PythonSVG } from "./python.svg";
-import { ReactComponent as FlaskSVG } from "./flask.svg";
+import { ReactComponent as MenuOpenSVG } from "./svg/menu.svg";
+import { ReactComponent as MenuCloseSVG } from "./svg/close.svg";
+import { ReactComponent as CvButton } from "./svg/cvbutton.svg";
+import { ReactComponent as GithubSVG } from "./svg/github.svg";
+import { ReactComponent as LinkedinSVG } from "./svg/linkedin.svg";
+import { ReactComponent as HtmlSVG } from "./svg/html.svg";
+import { ReactComponent as CssSVG } from "./svg/css.svg";
+import { ReactComponent as JavaScriptSVG } from "./svg/javascript.svg";
+import { ReactComponent as ReactSVG } from "./svg/react.svg";
+import { ReactComponent as NodeSVG } from "./svg/node.svg";
+import { ReactComponent as ExpressSVG } from "./svg/express.svg";
+import { ReactComponent as PsqlSVG } from "./svg/psql.svg";
+import { ReactComponent as DotnetSVG } from "./svg/dotnet.svg";
+import { ReactComponent as CSharpSVG } from "./svg/csharp.svg";
+import { ReactComponent as TailwindSVG } from "./svg/tailwind.svg";
+import { ReactComponent as ReactNativeSVG } from "./svg/reactnative.svg";
+import { ReactComponent as DockerSVG } from "./svg/docker.svg";
+import { ReactComponent as TypeScriptSVG } from "./svg/typescript.svg";
+import { ReactComponent as MysqlSVG } from "./svg/mysql.svg";
+import { ReactComponent as SqliteSVG } from "./svg/sqlite.svg";
+import { ReactComponent as NextJsSVG } from "./svg/nextjs.svg";
+import { ReactComponent as PythonSVG } from "./svg/python.svg";
+import { ReactComponent as FlaskSVG } from "./svg/flask.svg";
 
 export {
+  MenuOpenSVG,
+  MenuCloseSVG,
+  CvButton,
+  GithubSVG,
+  LinkedinSVG,
   HtmlSVG,
   CssSVG,
   JavaScriptSVG,
@@ -28,9 +35,6 @@ export {
   NodeSVG,
   ExpressSVG,
   PsqlSVG,
-  CvButton,
-  GithubSVG,
-  LinkedinSVG,
   DotnetSVG,
   CSharpSVG,
   TailwindSVG,
