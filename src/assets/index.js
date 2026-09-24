@@ -14,6 +14,11 @@ import { ReactComponent as TailwindSVG } from "./tailwind.svg";
 import { ReactComponent as ReactNativeSVG } from "./reactnative.svg";
 import { ReactComponent as DockerSVG } from "./docker.svg";
 import { ReactComponent as TypeScriptSVG } from "./typescript.svg";
+import { ReactComponent as MysqlSVG } from "./mysql.svg";
+import { ReactComponent as SqliteSVG } from "./sqlite.svg";
+import { ReactComponent as NextJsSVG } from "./nextjs.svg";
+import { ReactComponent as PythonSVG } from "./python.svg";
+import { ReactComponent as FlaskSVG } from "./flask.svg";
 
 export {
   HtmlSVG,
@@ -32,4 +37,9 @@ export {
   ReactNativeSVG,
   DockerSVG,
   TypeScriptSVG,
+  MysqlSVG,
+  SqliteSVG,
+  NextJsSVG,
+  PythonSVG,
+  FlaskSVG,
 };
