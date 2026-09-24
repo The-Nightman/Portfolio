@@ -16,6 +16,11 @@ import {
   ReactNativeSVG,
   DockerSVG,
   TypeScriptSVG,
+  MysqlSVG,
+  SqliteSVG,
+  NextJsSVG,
+  PythonSVG,
+  FlaskSVG,
 } from "../assets";
 
 const SkillsHome = () => {
@@ -56,7 +61,8 @@ const SkillsHome = () => {
           <span className="sr-only">Developing skills in:</span>
         </h2>
         <p>
-          <span aria-hidden>/*</span>view more skills in about
+          <span aria-hidden>/*</span>
+          view more skills in about
           <span aria-hidden>*/</span>
         </p>
         <p>
@@ -110,6 +116,12 @@ const SkillsHome = () => {
               <ReactNativeSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
+          <Tooltip title="Next JS" placement="top" followCursor>
+            <li>
+              <span className="sr-only">Next JS</span>
+              <NextJsSVG className="h-[3.75rem] w-[3.75rem]" />
+            </li>
+          </Tooltip>
           <Tooltip title="Node JS" placement="top" followCursor>
             <li>
               <span className="sr-only">Node JS</span>
@@ -128,16 +140,40 @@ const SkillsHome = () => {
               <CSharpSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title=".Net 7 / ASP.NET Core" placement="top" followCursor>
+          <Tooltip title=".Net / ASP.NET" placement="top" followCursor>
             <li>
-              <span className="sr-only">Dotnet 7 / ASP.NET Core</span>
+              <span className="sr-only">Dotnet / ASP.NET</span>
               <DotnetSVG className="h-[3.75rem] w-[3.75rem]" />
+            </li>
+          </Tooltip>
+          <Tooltip title="Python" placement="top" followCursor>
+            <li>
+              <span className="sr-only">Python</span>
+              <PythonSVG className="h-[3.75rem] w-[3.75rem]" />
+            </li>
+          </Tooltip>
+          <Tooltip title="Flask" placement="top" followCursor>
+            <li>
+              <span className="sr-only">Flask</span>
+              <FlaskSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
           <Tooltip title="PostgreSql" placement="top" followCursor>
             <li>
               <span className="sr-only">PostgreSql</span>
               <PsqlSVG className="h-[3.75rem] w-[3.75rem]" />
+            </li>
+          </Tooltip>
+          <Tooltip title="MySQL" placement="top" followCursor>
+            <li>
+              <span className="sr-only">MySQL</span>
+              <MysqlSVG className="h-[3.75rem] w-[3.75rem]" />
+            </li>
+          </Tooltip>
+          <Tooltip title="SQLite" placement="top" followCursor>
+            <li>
+              <span className="sr-only">SQLite</span>
+              <SqliteSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
           <Tooltip title="Docker" placement="top" followCursor>
