@@ -25,8 +25,8 @@ const MadeWith = () => {
         className="pb-40"
       >
         <h2 className="mt-16 mb-8 text-accent text-2xl font-bold">
-          <span aria-hidden>/*</span>This site was built with
-          <span aria-hidden>*/</span>
+          <span aria-hidden>/* </span>This site was built with
+          <span aria-hidden> */</span>
         </h2>
         <div className="grid auto-cols-max md:grid-cols-[max-content_max-content] auto-rows-auto md:grid-rows-1 gap-16 md:gap-32">
           <section>
@@ -77,9 +77,9 @@ const MadeWith = () => {
           <section>
             <h3 className="mb-2 text-primary text-lg font-bold">
               <span aria-hidden>
-                <span>def</span>
+                def
                 <span className="text-accent">(</span>
-                <span>_music</span>
+                _music
                 <span className="text-accent">)</span>
               </span>
               <span className="sr-only">My music</span>
@@ -88,11 +88,51 @@ const MadeWith = () => {
               <li>
                 <a
                   className="hover:text-accentComplementary transition-colors duration-300"
-                  href="https://open.spotify.com/track/7wdwIaXUuzlu1grzWMFRJm?si=5abfe714ff464a5b"
+                  href="https://open.spotify.com/track/6VdkxH4aACkmRjcSvz4cHB?si=7c7f44b811d44814"
                   target="_blank"
                 >
                   <span aria-hidden>//</span>
-                  <span> Ghost</span>
+                  <span> The Doors</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-accentComplementary transition-colors duration-300"
+                  href="https://open.spotify.com/track/1iDcKYNvo6gglrOG6lvnHL?si=e4c0935b585e4811"
+                  target="_blank"
+                >
+                  <span aria-hidden>//</span>
+                  <span> The Rolling Stones</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-accentComplementary transition-colors duration-300"
+                  href="https://open.spotify.com/track/2AxCeJ6PSsBYiTckM0HLY7?si=dfb20acbd44241df"
+                  target="_blank"
+                >
+                  <span aria-hidden>//</span>
+                  <span> Jimmy Hendrix</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-accentComplementary transition-colors duration-300"
+                  href="https://open.spotify.com/track/53O11dqezFoFYaaMjr1SPP?si=b5d299c3238b41e0"
+                  target="_blank"
+                >
+                  <span aria-hidden>//</span>
+                  <span> Sisters of Mercy</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-accentComplementary transition-colors duration-300"
+                  href="https://open.spotify.com/track/5AIxd4rnAD9Z935x1f9oCY?si=048e47a43fff444e"
+                  target="_blank"
+                >
+                  <span aria-hidden>//</span>
+                  <span> The Cult</span>
                 </a>
               </li>
               <li>
@@ -148,26 +188,6 @@ const MadeWith = () => {
               <li>
                 <a
                   className="hover:text-accentComplementary transition-colors duration-300"
-                  href="https://open.spotify.com/track/1iDcKYNvo6gglrOG6lvnHL?si=e4c0935b585e4811"
-                  target="_blank"
-                >
-                  <span aria-hidden>//</span>
-                  <span> The Rolling Stones</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-accentComplementary transition-colors duration-300"
-                  href="https://open.spotify.com/track/2AxCeJ6PSsBYiTckM0HLY7?si=dfb20acbd44241df"
-                  target="_blank"
-                >
-                  <span aria-hidden>//</span>
-                  <span> Jimmy Hendrix</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-accentComplementary transition-colors duration-300"
                   href="https://open.spotify.com/track/47W6YR93MPCGLEUReLMyDm?si=d8b7339b381c4408"
                   target="_blank"
                 >
@@ -183,26 +203,6 @@ const MadeWith = () => {
                 >
                   <span aria-hidden>//</span>
                   <span> Turbowolf</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-accentComplementary transition-colors duration-300"
-                  href="https://open.spotify.com/track/2gYriPqWA8iAKKP2pgW3OR?si=8e82352bdc4645da"
-                  target="_blank"
-                >
-                  <span aria-hidden>//</span>
-                  <span> Elliot Holmes</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-accentComplementary transition-colors duration-300"
-                  href="https://open.spotify.com/track/2BSEWKPGXooXHbDDle1noH?si=a8c6c59064fa4a74"
-                  target="_blank"
-                >
-                  <span aria-hidden>//</span>
-                  <span> Suspended 4th</span>
                 </a>
               </li>
               <li>
