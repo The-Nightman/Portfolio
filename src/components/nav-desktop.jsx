@@ -29,7 +29,7 @@ const NavDesktop = () => {
         </li>
         <li>
           <Link
-            to="mailto:keenan.brant@yahoo.co.uk?subject=Portfolio&body=Please write your message"
+            to="mailto:kbrant.career@pm.me?subject=Portfolio&body=Please write your message"
             className="hover:text-accent transition-colors duration-300"
             target="_blank"
             draggable="false"
