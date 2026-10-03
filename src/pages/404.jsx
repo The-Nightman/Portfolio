@@ -1,5 +1,5 @@
 import { Navbar } from "../components";
-import errorImg from "../assets/error.png";
+import errorImg from "../assets/images/error.png";
 
 const Error = () => {
   return (
