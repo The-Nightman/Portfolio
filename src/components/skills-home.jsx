@@ -67,116 +67,224 @@ const SkillsHome = () => {
         </p>
         <p>
           <span className="xl:hidden">
-            <span aria-hidden>/*</span>Hold to view<span aria-hidden>*/</span>
+            <span aria-hidden>/*</span>Tap to view<span aria-hidden>*/</span>
           </span>
           <span className="hidden xl:block">
             <span aria-hidden>/*</span>Hover to view<span aria-hidden>*/</span>
           </span>
         </p>
         <ul className="inline-flex flex-wrap gap-6 mt-4">
-          <Tooltip title="HTML" placement="top" followCursor>
+          <Tooltip
+            title="HTML"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">HTML</span>
               <HtmlSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="CSS" placement="top" followCursor>
+          <Tooltip
+            title="CSS"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">CSS</span>
               <CssSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="TailwindCSS" placement="top" followCursor>
+          <Tooltip
+            title="TailwindCSS"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Tailwind CSS</span>
               <TailwindSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="JavaScript" placement="top" followCursor>
+          <Tooltip
+            title="JavaScript"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">JavaScript</span>
               <JavaScriptSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="TypeScript" placement="top" followCursor>
+          <Tooltip
+            title="TypeScript"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">TypeScript</span>
               <TypeScriptSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="React" placement="top" followCursor>
+          <Tooltip
+            title="React"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">React JS</span>
               <ReactSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="React Native" placement="top" followCursor>
+          <Tooltip
+            title="React Native"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">React Native</span>
               <ReactNativeSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Next JS" placement="top" followCursor>
+          <Tooltip
+            title="Next JS"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Next JS</span>
               <NextJsSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Node JS" placement="top" followCursor>
+          <Tooltip
+            title="Node JS"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Node JS</span>
               <NodeSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Express JS" placement="top" followCursor>
+          <Tooltip
+            title="Express JS"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Express JS</span>
               <ExpressSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="C# (C Sharp)" placement="top" followCursor>
+          <Tooltip
+            title="C# (C Sharp)"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">C Sharp</span>
               <CSharpSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title=".Net / ASP.NET" placement="top" followCursor>
+          <Tooltip
+            title=".Net / ASP.NET"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Dotnet / ASP.NET</span>
               <DotnetSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Python" placement="top" followCursor>
+          <Tooltip
+            title="Python"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Python</span>
               <PythonSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Flask" placement="top" followCursor>
+          <Tooltip
+            title="Flask"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Flask</span>
               <FlaskSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="PostgreSql" placement="top" followCursor>
+          <Tooltip
+            title="PostgreSql"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">PostgreSql</span>
               <PsqlSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="MySQL" placement="top" followCursor>
+          <Tooltip
+            title="MySQL"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">MySQL</span>
               <MysqlSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="SQLite" placement="top" followCursor>
+          <Tooltip
+            title="SQLite"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">SQLite</span>
               <SqliteSVG className="h-[3.75rem] w-[3.75rem]" />
             </li>
           </Tooltip>
-          <Tooltip title="Docker" placement="top" followCursor>
+          <Tooltip
+            title="Docker"
+            placement="top"
+            followCursor
+            disableFocusListener
+            enterTouchDelay={0}
+          >
             <li>
               <span className="sr-only">Docker</span>
               <DockerSVG className="h-[3.75rem] w-[3.75rem]" />
