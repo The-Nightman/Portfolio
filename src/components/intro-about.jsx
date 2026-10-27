@@ -38,12 +38,13 @@ const IntroAbout = () => {
           <CvButton className="mb-4 fill-accent hover:fill-accentComplementary transition-colors duration-300" />
         </a>
         <p className="mb-4">
-          <span className="block">Junior Software Developer</span>
+          <span className="block">
+            Undergraduate Student Software Developer
+          </span>
           <span className="block">based in the UK</span>
         </p>
         <p>
-          <span aria-hidden>// </span>Music and Gym addict, concept art fan and
-          video game fiend
+          <span aria-hidden>// </span>Music, Powerlifting, Code and Video Games
         </p>
       </section>
     </>

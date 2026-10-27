@@ -34,9 +34,7 @@ const CurriculumVitae = () => {
           ref={ref}
         >
           <span aria-hidden>
-            <span>myCV(</span>
-            <span className="text-accent">{"() => cv.pdf"}</span>
-            <span>)</span>
+            myCV(<span className="text-accent">{"() => cv.pdf"}</span>)
           </span>
           <span className="sr-only">my cv / résumé</span>
         </h2>

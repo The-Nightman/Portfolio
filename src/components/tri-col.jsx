@@ -2,7 +2,7 @@ const TriCol = () => {
   return (
     <>
       <div
-        className="relative min-h-[9vh] bg-gradient-to-b from-[#550834]"
+        className="relative min-h-[9vh] bg-gradient-to-b from-[#550834] md:to-[#0e1116]"
         aria-hidden="true"
       >
         <svg

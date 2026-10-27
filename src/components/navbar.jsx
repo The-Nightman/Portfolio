@@ -1,9 +1,8 @@
-import { ReactComponent as MenuOpenSVG } from "../assets/menu.svg";
-import { ReactComponent as MenuCloseSVG } from "../assets/close.svg";
 import { NavDesktop, NavMobile } from "./";
 import { useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import { useCycle, AnimatePresence, motion } from "framer-motion";
+import { MenuOpenSVG, MenuCloseSVG } from "../assets";
 
 const Navbar = () => {
   const [mobileNav, toggleMobileNav] = useCycle(false, true);
@@ -13,8 +12,9 @@ const Navbar = () => {
     query: "(max-width: 800px)",
   });
 
+  // All of this needs to be rewritten at some point
   return (
-    <header className="mb-16">
+    <header className="mb-16 md:sticky md:top-0 md:pt-2 md:z-50 md:mb-10 md:h-12 md:bg-gradient-to-b md:from-[#0e1116] md:from-25%">
       <div className="flex flex-row justify-between max-[1100px]:max-w-[90vw] max-w-[80vw] mx-auto">
         <span className="max-md:absolute max-md:top-6 max-md:left-4 text-primary font-bold text-nowrap">
           KBrant

@@ -1,12 +1,39 @@
-import pyPad from "../assets/pypadcard.png";
-import silba from "../assets/silba.png";
-import NCNewsFE from "../assets/NCNewsFE.png";
-import NCNewsBE from "../assets/NCNewsBE.png";
-import edrJsonBuilder from "../assets/edrjsonbuilder.png";
-import IBDirect from "../assets/IBDirect.png";
-import AtomiFit from "../assets/atomifit.png";
+import pyPad from "../assets/projectImages/pypadcard.png";
+import silba from "../assets/projectImages/silba.png";
+import NCNewsFE from "../assets/projectImages/NCNewsFE.png";
+import NCNewsBE from "../assets/projectImages/NCNewsBE.png";
+import edrJsonBuilder from "../assets/projectImages/edrjsonbuilder.png";
+import IBDirect from "../assets/projectImages/IBDirect.png";
+import AtomiFit from "../assets/projectImages/atomifit.png";
+import ProjectR from "../assets/projectImages/ProjectR.png";
+import Elanco from "../assets/projectImages/Elanco.png";
+import HMS from "../assets/projectImages/HMS.png";
 
 const projects = [
+  {
+    image: Elanco,
+    name: "Elanco",
+    body: "A data visualisation application for displaying tick sightings across the UK built to inform public health and livestock protection as part of a 4 person team for Elanco as a client for the Software Projects module. Built with NextJS, TailwindCSS, D3.js, DrizzleORM and MySQL.",
+    repo: "https://github.com/The-Nightman/Elanco-Tick-Sighting-Visualiser",
+    live: null,
+    fullstack: false,
+  },
+  {
+    image: ProjectR,
+    name: "ProjectR",
+    body: "A WinForms based desktop application for tracking bugs and issues in software development projects. featuring an accessible and user-friendly interface, data visualization and reporting capabilities. Built with WinForms (C#), Entity Framework and SQLite.",
+    repo: "https://github.com/The-Nightman/ProjectR-Bug-Tracker-ProgS1-Assigntment",
+    live: null,
+    fullstack: false,
+  },
+  {
+    image: HMS,
+    name: "Hospital Management System",
+    body: "A web based EHR system for managing appointments, prescriptions, lab results and triage requests on both patient and staff sides with role based access and audit logging, built for the Software Projects individual assignment. Built with Asp.Net MVC, Entity Framework and MySQL. Incomplete.",
+    repo: "https://github.com/The-Nightman/HMS-Software-Projects-Y1S2-Individual",
+    live: null,
+    fullstack: false,
+  },
   {
     image: AtomiFit,
     name: "AtomiFit",
@@ -18,7 +45,7 @@ const projects = [
   {
     image: IBDirect,
     name: "IBDirect",
-    body: "NHS based web-portal for IBD patients and healthcare specialists to monitor, update and create records & appointments. Responsive design for devices used by NHS staff and patients with an ASP.NET API using EFCore and SignalR.",
+    body: "NHS based web-portal for IBD patients and healthcare specialists to monitor, update and create records & appointments. Responsive design for devices used by NHS staff and patients with an ASP.NET API using EFCore and SignalR. Pending Rewrite.",
     repo: [
       "https://github.com/The-Nightman/IBDirect",
       "https://github.com/The-Nightman/IBDirectAPI",
